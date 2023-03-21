@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include space_secure *.css
+recursive-include space_secure *.csv
+recursive-include space_secure *.html
+recursive-include space_secure *.ico
+recursive-include space_secure *.js
+recursive-include space_secure *.json
+recursive-include space_secure *.md
+recursive-include space_secure *.png
+recursive-include space_secure *.py
+recursive-include space_secure *.svg
+recursive-include space_secure *.txt
+recursive-exclude space_secure *.pyc
