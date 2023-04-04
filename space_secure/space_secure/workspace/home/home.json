@@ -1,0 +1,72 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Subscription",
+   "label": "Collection of Subscription"
+  },
+  {
+   "chart_name": "Client",
+   "label": "Number of client"
+  }
+ ],
+ "creation": "2023-03-26 18:13:44.241503",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "getting-started",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Home",
+ "links": [],
+ "modified": "2023-03-26 23:05:46.910175",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Home",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Main Services",
+   "link_to": "Main Service",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Sub Service",
+   "link_to": "Sub Service",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Client",
+   "link_to": "Client",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Subscription",
+   "link_to": "Subscription",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Package",
+   "link_to": "Package",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Communication Requests",
+   "link_to": "Communication Requests",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Shortcuts"
+}

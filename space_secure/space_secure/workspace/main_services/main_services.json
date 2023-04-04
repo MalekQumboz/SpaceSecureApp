@@ -1,0 +1,45 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2023-03-26 18:39:31.348648",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "sell",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Main Services",
+ "links": [],
+ "modified": "2023-03-26 23:12:21.202350",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Main Services",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Main Services List",
+   "link_to": "Main Service",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "New Main Service",
+   "link_to": "Main Service",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Report Builder",
+   "label": "Main Service Report",
+   "link_to": "Main Service",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Main Services"
+}

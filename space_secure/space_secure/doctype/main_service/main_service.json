@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MainServices-.###",
+ "creation": "2023-03-21 22:24:30.128809",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information",
+  "service_name",
+  "arabic_service_name",
+  "image",
+  "column_break_d300g",
+  "heading_null",
+  "service_description",
+  "arabic_service_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "English Service Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "service_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "English Service Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Heading",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "arabic_service_name",
+   "fieldtype": "Data",
+   "label": "Arabic Service Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "arabic_service_description",
+   "fieldtype": "Small Text",
+   "label": "Arabic Service Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_d300g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heading_null",
+   "fieldtype": "Heading",
+   "label": " "
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-27 16:13:10.764102",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Main Service",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Space Secure Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "arabic_service_name"
+}

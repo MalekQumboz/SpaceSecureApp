@@ -1,0 +1,44 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Communication Request",
+   "label": "Communication Requests"
+  }
+ ],
+ "creation": "2023-03-26 23:42:49.017005",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "support",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Communication Request",
+ "links": [],
+ "modified": "2023-03-27 00:04:24.582612",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Communication Request",
+ "owner": "Administrator",
+ "pin_to_bottom": 1,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Communication Requests List",
+   "link_to": "Communication Requests",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Report Builder",
+   "label": "Communication Requests Report",
+   "link_to": "Communication Requests",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Communication Request"
+}

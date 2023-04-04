@@ -4,4 +4,4 @@ Space Secure Dashboard
 
 #### License
 
-MIT
+MIT# SpaceSecureApp

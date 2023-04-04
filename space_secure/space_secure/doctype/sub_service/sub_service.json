@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SubService-.###",
+ "creation": "2023-03-21 22:52:41.702949",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information",
+  "service_name",
+  "arabic_service_name",
+  "main_services_name",
+  "image",
+  "active",
+  "column_break_akshf",
+  "heading_null",
+  "service_description",
+  "arabic_service_description",
+  "section_break_xxl1m",
+  "service_features"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "English Service Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_akshf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_description",
+   "fieldtype": "Small Text",
+   "label": "English Service Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "main_services_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Main Services Name",
+   "options": "Main Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Heading",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "service_features",
+   "fieldtype": "Table",
+   "label": "Service Features",
+   "options": "Service Features"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "section_break_xxl1m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "heading_null",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "fieldname": "arabic_service_name",
+   "fieldtype": "Data",
+   "label": "Arabic Service Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "arabic_service_description",
+   "fieldtype": "Small Text",
+   "label": "Arabic Service Description"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-27 16:12:28.848494",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Sub Service",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Space Secure Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "arabic_service_name"
+}

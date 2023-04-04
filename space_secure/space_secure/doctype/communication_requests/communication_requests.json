@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Request.####",
+ "creation": "2023-03-24 17:34:58.395677",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "email",
+  "phone",
+  "type",
+  "status",
+  "column_break_djzeb",
+  "srevice_name",
+  "package_name",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "srevice_name",
+   "fieldtype": "Link",
+   "label": "Srevice Name",
+   "options": "Sub Service"
+  },
+  {
+   "fieldname": "package_name",
+   "fieldtype": "Link",
+   "label": "Package Name",
+   "options": "Package"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_djzeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\u0637\u0644\u0628 \u062e\u062f\u0645\u0629\n\u062a\u0642\u062f\u064a\u0645 \u0634\u0643\u0648\u0649\n\u0627\u0644\u062f\u0639\u0645 \u0627\u0644\u0641\u0646\u064a"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Communication Requests",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "\u0627\u0644\u0637\u0644\u0628 \u0645\u0639\u0644\u0642",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\u0627\u0644\u0637\u0644\u0628 \u0645\u0639\u0644\u0642\n\u062a\u0645 \u0627\u0644\u062a\u0648\u0627\u0635\u0644"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-27 16:06:58.110179",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Communication Requests",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Space Secure Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name"
+}

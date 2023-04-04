@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Client-.####",
+ "creation": "2023-03-23 02:28:04.255004",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information",
+  "full_name",
+  "phone",
+  "email",
+  "column_break_khd6i",
+  "heading_null01",
+  "address",
+  "section_break_zi46c",
+  "company_information",
+  "company_name",
+  "company_phone",
+  "company_website",
+  "column_break_jlvbu",
+  "heading_null02",
+  "company_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_information",
+   "fieldtype": "Heading",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_zi46c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company_information",
+   "fieldtype": "Heading",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "company_phone",
+   "fieldtype": "Data",
+   "label": "Company Phone"
+  },
+  {
+   "fieldname": "company_website",
+   "fieldtype": "Data",
+   "label": "Company Website"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Small Text",
+   "label": "Company Address"
+  },
+  {
+   "fieldname": "column_break_khd6i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heading_null01",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "fieldname": "heading_null02",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "fieldname": "column_break_jlvbu",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-27 16:13:29.976266",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Client",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Space Secure Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name"
+}

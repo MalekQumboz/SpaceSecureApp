@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Subscription.#####",
+ "creation": "2023-03-24 11:59:39.315972",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_information",
+  "client_name",
+  "client_phone",
+  "client_email",
+  "client_address",
+  "column_break_l3v0l",
+  "null",
+  "company_name",
+  "company_phone",
+  "company_website",
+  "company_address",
+  "section_break_xxv3h",
+  "subscription_details",
+  "package",
+  "package_name",
+  "main_service",
+  "sub_service",
+  "column_break_n4wbj",
+  "null4",
+  "start_date",
+  "end_date",
+  "total_subscription_days",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_information",
+   "fieldtype": "Heading",
+   "label": "Client information"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client Name",
+   "options": "Client",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "client_name.phone",
+   "fieldname": "client_phone",
+   "fieldtype": "Data",
+   "label": "Client Phone",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "client_name.email",
+   "fieldname": "client_email",
+   "fieldtype": "Data",
+   "label": "Client Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "client_name.address",
+   "fieldname": "client_address",
+   "fieldtype": "Small Text",
+   "label": "Client Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_l3v0l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "client_name.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "null",
+   "fieldtype": "Heading"
+  },
+  {
+   "fieldname": "section_break_xxv3h",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subscription_details",
+   "fieldtype": "Heading",
+   "label": "Subscription details"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "client_name.company_phone",
+   "fieldname": "company_phone",
+   "fieldtype": "Data",
+   "label": "Company Phone",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "client_name.company_address",
+   "fieldname": "company_address",
+   "fieldtype": "Small Text",
+   "label": "Company Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "client_name.company_website",
+   "fieldname": "company_website",
+   "fieldtype": "Data",
+   "label": "Company website",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "package.package_name",
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "label": "Package Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_n4wbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Package",
+   "options": "Package",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "package.main_service",
+   "fieldname": "main_service",
+   "fieldtype": "Data",
+   "label": "Main Service",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "package.sub_service",
+   "fieldname": "sub_service",
+   "fieldtype": "Data",
+   "label": "Sub Service",
+   "read_only": 1
+  },
+  {
+   "fieldname": "null4",
+   "fieldtype": "Heading"
+  },
+  {
+   "fieldname": "total_subscription_days",
+   "fieldtype": "Int",
+   "label": "Total Subscription Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Int",
+   "label": "Total price",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-27 16:12:52.545063",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Subscription",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Space Secure Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

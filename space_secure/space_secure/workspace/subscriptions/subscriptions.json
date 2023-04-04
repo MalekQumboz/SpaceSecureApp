@@ -1,0 +1,45 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2023-03-26 22:55:04.146613",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "crm",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Subscriptions",
+ "links": [],
+ "modified": "2023-03-26 23:08:59.712276",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Subscriptions",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Subscription List",
+   "link_to": "Subscription",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "New Subscription",
+   "link_to": "Subscription",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Report Builder",
+   "label": "Subscription Report",
+   "link_to": "Subscription",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Subscriptions"
+}

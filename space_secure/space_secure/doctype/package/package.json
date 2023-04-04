@@ -1,0 +1,356 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Package.###",
+ "creation": "2023-03-23 02:47:19.790145",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information",
+  "_section",
+  "package_name",
+  "main_service",
+  "active",
+  "column_break_do2uw",
+  "sub_service",
+  "price",
+  "section_break_xjgb7",
+  "package_details",
+  "section_break_gflay",
+  "websites_and_applications_design",
+  "professional_design",
+  "multi_language",
+  "logo_design",
+  "compatibility_with_browser",
+  "multiple_pages",
+  "live_chat",
+  "adding__in_google",
+  "column_break_2mraz",
+  "photo_and_video_gallery",
+  "adding_social_media_pages",
+  "service_request_forms",
+  "product_and_shopping_cart",
+  "website_stats",
+  "platform_upgrade",
+  "training__on_dashboard",
+  "technical_support",
+  "protection_and_security",
+  "section_break_hjln9",
+  "web_hosting_services",
+  "ram",
+  "hard_drive",
+  "traffic",
+  "processor",
+  "number_of_files",
+  "column_break_cnbgg",
+  "heading_null3",
+  "number_of_connections_at_the_moment",
+  "number_of__emails",
+  "number_of_databases",
+  "ssl_certificate",
+  "ssh_access",
+  "24_hours_technical_support",
+  "section_break_8q5sv",
+  "cyber_security_service",
+  "service_features"
+ ],
+ "fields": [
+  {
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "Price (for manth)",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Heading",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "column_break_do2uw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "_section",
+   "fieldtype": "Section Break",
+   "label": " "
+  },
+  {
+   "fieldname": "section_break_xjgb7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "package_details",
+   "fieldtype": "Heading",
+   "label": "Package Details"
+  },
+  {
+   "depends_on": "eval:doc.main_service== '\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0648\u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a'",
+   "fieldname": "section_break_gflay",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "professional_design",
+   "fieldtype": "Select",
+   "label": "Professional Design",
+   "options": "\u0627\u062e\u062a\u064a\u0627\u0631 \u0642\u0627\u0644\u0628\n\u062a\u0635\u0645\u064a\u0645 \u062e\u0627\u0635\n\u063a\u064a\u0631 \u0645\u062d\u062f\u0648\u062f"
+  },
+  {
+   "default": "0",
+   "fieldname": "compatibility_with_browser",
+   "fieldtype": "Check",
+   "label": "Compatibility with browser"
+  },
+  {
+   "default": "0",
+   "fieldname": "logo_design",
+   "fieldtype": "Check",
+   "label": "Logo Design"
+  },
+  {
+   "fieldname": "multi_language",
+   "fieldtype": "Select",
+   "label": "Multi Language",
+   "options": "\u0639\u0631\u0628\u064a \u0641\u0642\u0637\n\u0639\u0631\u0628\u064a \u0627\u0646\u062c\u0644\u064a\u0632\u064a\n\u0627\u0643\u062b\u0631 \u0645\u0646 \u0644\u063a\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "multiple_pages",
+   "fieldtype": "Check",
+   "label": "Multiple pages"
+  },
+  {
+   "default": "0",
+   "fieldname": "live_chat",
+   "fieldtype": "Check",
+   "label": "Live chat"
+  },
+  {
+   "default": "0",
+   "fieldname": "adding__in_google",
+   "fieldtype": "Check",
+   "label": "Adding  in Google"
+  },
+  {
+   "fieldname": "column_break_2mraz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "photo_and_video_gallery",
+   "fieldtype": "Check",
+   "label": "Photo and video gallery"
+  },
+  {
+   "default": "0",
+   "fieldname": "adding_social_media_pages",
+   "fieldtype": "Check",
+   "label": "Adding social media pages"
+  },
+  {
+   "default": "0",
+   "fieldname": "service_request_forms",
+   "fieldtype": "Check",
+   "label": "Service Request Forms"
+  },
+  {
+   "default": "0",
+   "fieldname": "product_and_shopping_cart",
+   "fieldtype": "Check",
+   "label": "Product and shopping cart"
+  },
+  {
+   "default": "0",
+   "fieldname": "website_stats",
+   "fieldtype": "Check",
+   "label": "Website stats"
+  },
+  {
+   "default": "0",
+   "fieldname": "platform_upgrade",
+   "fieldtype": "Check",
+   "label": "Platform upgrade"
+  },
+  {
+   "default": "0",
+   "fieldname": "training__on_dashboard",
+   "fieldtype": "Check",
+   "label": "Training  on Dashboard"
+  },
+  {
+   "default": "0",
+   "fieldname": "technical_support",
+   "fieldtype": "Check",
+   "label": "Technical support"
+  },
+  {
+   "default": "0",
+   "fieldname": "protection_and_security",
+   "fieldtype": "Check",
+   "label": "Protection and security"
+  },
+  {
+   "depends_on": "eval:doc.main_service== '\u0627\u0644\u0627\u0633\u062a\u0636\u0627\u0641\u0629'",
+   "fieldname": "section_break_hjln9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "web_hosting_services",
+   "fieldtype": "Heading",
+   "label": "Web hosting services"
+  },
+  {
+   "fieldname": "main_service",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Main Services",
+   "options": "Main Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sub_service",
+   "fieldtype": "Link",
+   "label": "Sub Service",
+   "options": "Sub Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "websites_and_applications_design",
+   "fieldtype": "Heading",
+   "label": "websites and applications design"
+  },
+  {
+   "fieldname": "ram",
+   "fieldtype": "Int",
+   "label": "RAM"
+  },
+  {
+   "fieldname": "hard_drive",
+   "fieldtype": "Data",
+   "label": "Hard drive"
+  },
+  {
+   "fieldname": "traffic",
+   "fieldtype": "Int",
+   "label": "Traffic"
+  },
+  {
+   "fieldname": "processor",
+   "fieldtype": "Int",
+   "label": "Processor"
+  },
+  {
+   "fieldname": "number_of_files",
+   "fieldtype": "Int",
+   "label": "Number of files"
+  },
+  {
+   "fieldname": "number_of_connections_at_the_moment",
+   "fieldtype": "Int",
+   "label": "Number of connections at the moment"
+  },
+  {
+   "fieldname": "number_of__emails",
+   "fieldtype": "Int",
+   "label": "Number of  emails"
+  },
+  {
+   "fieldname": "number_of_databases",
+   "fieldtype": "Int",
+   "label": "Number of databases"
+  },
+  {
+   "default": "0",
+   "fieldname": "ssl_certificate",
+   "fieldtype": "Check",
+   "label": "SSL certificate"
+  },
+  {
+   "default": "0",
+   "fieldname": "ssh_access",
+   "fieldtype": "Check",
+   "label": "ssh access"
+  },
+  {
+   "default": "0",
+   "fieldname": "24_hours_technical_support",
+   "fieldtype": "Check",
+   "label": "24 hours technical support"
+  },
+  {
+   "fieldname": "column_break_cnbgg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heading_null3",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "depends_on": "eval:doc.main_service== '\u0627\u0644\u0627\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a'",
+   "fieldname": "section_break_8q5sv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cyber_security_service",
+   "fieldtype": "Heading",
+   "label": "Cyber security service"
+  },
+  {
+   "fieldname": "service_features",
+   "fieldtype": "Table",
+   "label": "Service features",
+   "options": "Service Features"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-27 16:11:57.641977",
+ "modified_by": "Administrator",
+ "module": "Space Secure",
+ "name": "Package",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Space Secure Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "package_name"
+}
