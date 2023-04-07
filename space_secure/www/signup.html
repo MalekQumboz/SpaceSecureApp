@@ -1,9 +1,9 @@
+
 {% extends 'templates/registerbase.html' %}
 
-{% block title %} تسجيل الدخول {% endblock %}
+{% block title %} تسجيل اشتراك {% endblock %}
 
 {% block content %}
-  <main id="main">
     <section class="singup">
       <div class="container aos-init aos-animate">
         <div class="row justify-content-between">
@@ -17,8 +17,8 @@
                         <img src="assets/space_secure/assets/img/logo_white.svg" alt="" height="100">
                       </a>
                     </div>
-                    <h3 class="card-title text-white fs-5 fw-bold mt-4 mb-4">لا يوجد لك حساب</h3>
-                    <a href="/signup" class="btn  hvr-sweep-to-top btn-primary mb-4 mt-1 ms-4 me-4">تسجيل الاشتراك <i class="bi bi-person-add"></i></a>
+                    <h3 class="card-title text-white fs-5 fw-bold mt-4 mb-4">هل يوجد لك حساب؟</h3>
+                    <a href="/login" class="btn  hvr-sweep-to-top btn-primary mb-4 mt-1 ms-4 me-4">تسجيل الدخول <i class="bi bi-box-arrow-left"></i></a>
                   </div>
                   <div class="card-body p-0">
                     <img class="img-fluid" src="assets/space_secure/assets/img/login.svg" alt="">
@@ -30,7 +30,7 @@
           <div class="col-12 col-lg-6 text-center align-self-center">
             <div class="card bg-transparent border-0">
               <div class="card-header bg-transparent border-0 text-center">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-box-arrow-left fs-1 text-success"></i> تسجيل الدخول </h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-person-add fs-1 text-success"></i> تسجيل حساب جديد </h3>
               </div>
               <div class="card-body">
                 <form action="" class="row justify-content-center">
@@ -42,20 +42,33 @@
                   </div>
                   <div class="col-10">
                     <div class="input-group mt-4">
+                      <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+                      <span class="input-group-text"><i class="bi bi-envelope-at mx-1 fs-5"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-10">
+                    <div class="input-group mt-4">
+                      <input type="tel" class="form-control" placeholder="رقم الجوال">
+                      <span class="input-group-text"><i class="bi bi-phone mx-1 fs-5"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-10">
+                    <div class="input-group mt-4">
                       <input type="password" class="form-control" placeholder="كلمة المرور">
                       <span class="input-group-text"><i class="bi bi-lock mx-1 fs-5"></i></span>
                     </div>
                   </div>
                   <div class="col-10 text-start">
-                    <a href="#" class="btn hvr-sweep-to-top btn-info mt-4">تسجيل الدخول <i class="bi bi-arrow-left"></i></a>
+                    <a href="#" class="btn hvr-sweep-to-top btn-info mt-4">التسجيل <i class="bi bi-arrow-left"></i></a>
                   </div>
                 </form>
                 <div class="row justify-content-center">
                   <div class="col-8 mt-4">
+                    <div class="social-links my-4">
 
                   </div>
                   <div class="text-center">
-                    <a class="text-success mx-4" href="LTR/login">
+                    <a class="text-success mx-4" href="LTR/signup">
                       تغيير اللغة
                       <span class="badge bg-success link-hover p-2 rounded-circle"><i class="bi bi-translate fs-6"></i></span>
                     </a>
@@ -66,12 +79,7 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
-  </main>
-
 {% endblock %}
-
-
-
-
