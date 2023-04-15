@@ -1,6 +1,6 @@
-{% extends 'templates/arabicBasePage.html' %}
+{% extends 'templates/enBasePage.html' %}
 
-{% block title %} الباقات {% endblock %}
+{% block title %} Packages {% endblock %}
 
 {% block content %}
 
@@ -15,32 +15,34 @@
           <div class="col-lg-6 order-2 order-lg-1 content align-self-center">
             <div class="card border-0 shadow-none bg-transparent">
               <div class="card-header bg-transparent border-0" data-aos="fade-up">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-bar-chart-steps fs-2 text-success"></i> الباقات والعروض </h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-bar-chart-steps fs-2 text-success"></i> Packages & Offers </h3>
               </div>
               <div class="card-body text-end p-0" data-aos="fade-up">
                 <p class="card-text fs-6 text-secondary lh-lg" style="text-align: justify;">
-                  احصل على الخدمة المثالية مع باقاتنا الحصرية التي تتضمن لك التميز في اعمالك
+                Get the perfect service with our exclusive packages that include excellence in your business.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 order-1 order-lg-2 background aos-init aos-animate" data-aos="zoom-in">
-            <img src="assets/space_secure/assets/img/details-1.png" class="img-fluid" alt="">
+            <img src="../assets/space_secure/assets/img/details-1.png" class="img-fluid" alt="">
           </div>
         </div>
 
       </div>
     </section>
     <!--/breadcrumb-->
+
+
     <!--  section1 -->
-    <section class="pricing">
+     <section class="pricing">
       <div class="container">
         <div class="row pb-2 justify-content-center">
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> باقات خدمات تصميم المواقع والتطبيقات</h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> Web & Application Services Packages</h3>
 
               </div>
             </div>
@@ -53,11 +55,29 @@
           <div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-item text-center">
               <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
-              <h3>{{webservice["package_name"]}}</h3>
+              <h3>{{webservice["package_name_en"]}}</h3>
               <h4><sup>SAR</sup>{{webservice["price"]}}</h4>
               <ul>
-                <li><i class="bi bi-check"></i>تصميم احترافي: {{webservice["professional_design"]}}</li>
-                <li><i class="bi bi-check"></i>تعدد اللغات: {{webservice["multi_language"]}}</li>
+
+                <li><i class="bi bi-check"></i>Professional Design:
+                  {% if webservice["professional_design"] =="اختيار قالب" %}
+                    Choose a template
+                  {% elif webservice["professional_design"] =="تصميم خاص"  %}
+                    Special Design
+                  {% elif webservice["professional_design"] =="غير محدود"  %}
+                  Unlimited
+                  {% endif %}
+                  </li>
+
+                <li><i class="bi bi-check"></i>Language:
+                  {% if webservice["multi_language"] =="عربي فقط" %}
+                    Arabic only
+                  {% elif webservice["multi_language"] =="عربي انجليزي"  %}
+                    Arabic English
+                  {% elif webservice["multi_language"] =="اكثر من لغة"  %}
+                  Multi Language
+                  {% endif %}
+                  </li>
 
                 <li>
                 {% if webservice["logo_design"] ==1 %}
@@ -65,7 +85,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                تصميم شعار
+                Logo Design
                 </li>
 
                 <li>
@@ -74,7 +94,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                 التوافق مع المتصفحات
+                 Browser compatibility
                 </li>
 
                 <li>
@@ -83,7 +103,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                أقسام وصفحات غير محدودة
+                Unlimited pages
                 </li>
 
                 <li>
@@ -92,7 +112,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                محادثة مباشرة
+                Live chat
                 </li>
 
                 <li>
@@ -101,7 +121,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                  اضافة الموقع في جوجل
+                 Add website in Google
                 </li>
 
                 <li>
@@ -110,7 +130,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                 معرض صور وفيديو
+                Photo & Video Gallery
                 </li>
 
                 <li>
@@ -119,7 +139,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                 اضافة مواقع التواصل الاجتماعي
+                 Add Social Media
                 </li>
 
                 <li>
@@ -128,7 +148,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                نموذج طلب خدمة
+                Service Request Form
                 </li>
 
                 <li>
@@ -137,7 +157,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                منتجات مع سلة المشتريات
+                Products with cart
                 </li>
 
                 <li>
@@ -146,7 +166,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                احصائيات للموقع
+                Website Stats
                 </li>
 
                 <li>
@@ -155,7 +175,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                التحديث والترقيه للمنصة
+                upgrade of the platform
                 </li>
 
                 <li>
@@ -164,7 +184,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                تدريب على لوحة التحكم
+                Control panel training
                 </li>
 
                 <li>
@@ -173,7 +193,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                الدعم الفني
+                Technical Support
                 </li>
 
                 <li>
@@ -182,10 +202,10 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                الحماية
+                Protection
                 </li>
               </ul>
-              <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>
+              <a href="servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>
             </div>
 
           </div>
@@ -203,7 +223,7 @@
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-hdd-network fs-2 text-success"></i> باقات الخدمات التقنية </h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-hdd-network fs-2 text-success"></i> Hosting Services Packages </h3>
 
               </div>
             </div>
@@ -215,17 +235,17 @@
           <div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-item text-center">
               <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
-              <h3>{{host["package_name"]}}</h3>
+              <h3>{{host["package_name_en"]}}</h3>
               <h4><sup>SAR</sup>{{host["price"]}}</h4>
               <ul>
-                <li><i class="bi bi-check"></i>	الرام العشوائي: {{host["ram"]}}</li>
-                <li><i class="bi bi-check"></i>	الهارد ديسك: {{host["hard_drive"]}}</li>
-                <li><i class="bi bi-check"></i>	الترافيك: {{host["traffic"]}}</li>
-                <li><i class="bi bi-check"></i>	المعالج: {{host["processor"]}}</li>
-                <li><i class="bi bi-check"></i>	 عدد الملفات: {{host["number_of_files"]}}</li>
-                <li><i class="bi bi-check"></i>	عدد الاتصالات في اللحظة: {{host["number_of_connections_at_the_moment"]}}</li>
-                <li><i class="bi bi-check"></i>	عدد الايميلات: {{host["number_of__emails"]}}</li>
-                <li><i class="bi bi-check"></i>	عدد قواعد البيانات: {{host["number_of_databases"]}}</li>
+                <li><i class="bi bi-check"></i>	RAM: {{host["ram"]}}</li>
+                <li><i class="bi bi-check"></i>	Hard disk: {{host["hard_drive"]}}</li>
+                <li><i class="bi bi-check"></i>	Traffic: {{host["traffic"]}}</li>
+                <li><i class="bi bi-check"></i>	CPU: {{host["processor"]}}</li>
+                <li><i class="bi bi-check"></i>Number of files: {{host["number_of_files"]}}</li>
+                <li><i class="bi bi-check"></i>connections per moment: {{host["number_of_connections_at_the_moment"]}}</li>
+                <li><i class="bi bi-check"></i>	Number of emails: {{host["number_of__emails"]}}</li>
+                <li><i class="bi bi-check"></i>	Number of databases: {{host["number_of_databases"]}}</li>
 
                 <li>
                 {% if host["ssl_certificate"] ==1 %}
@@ -233,7 +253,7 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                شهادة SSL
+                SSL certificate
                 </li>
 
                 <li>
@@ -251,10 +271,10 @@
                 {% else %}
                   <i class="bi bi-x"></i>
                 {% endif %}
-                دعم فني 24 ساعة
+                24-hour technical support
                 </li>
               </ul>
-              <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>
+              <a href="servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>
             </div>
           </div>
           {% endfor %}
@@ -273,7 +293,7 @@
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-shield-check fs-2 text-success"></i> باقات خدمات الأمن السيبراني </h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-shield-check fs-2 text-success"></i> Cybersecurity Services Packagespy </h3>
 
               </div>
             </div>
@@ -284,13 +304,13 @@
           <div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-item text-center">
               <span class="box-icon-se" ><i class="bi bi-shield-check fs-1"></i></span>
-              <h3>{{cypersecurity["package_name"]}}</h3>
+              <h3>{{cypersecurity["package_name_en"]}}</h3>
               <ul>
                  {% for features in cypersecurity["service_features"] %}
                 <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
                 {% endfor %}
               </ul>
-              <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>
+              <a href="servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>
             </div>
           </div>
           {% endfor %}
@@ -303,5 +323,3 @@
   </main><!-- End #main -->
 
 {% endblock %}
-
-

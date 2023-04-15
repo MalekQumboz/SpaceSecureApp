@@ -190,48 +190,337 @@
         </div>
         <div class="row justify-content-center gy-4 mt-2">
 
+          {% if webservice_package %}
           <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-item text-center">
-              <span class="box-icon-se" ><i class="bi bi-shield-check fs-1"></i></span>
-              <h3>حماية من الهجمات</h3>
-              <h4><sup>$</sup>0</h4>
+              <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
+              <h3>{{webservice_package.package_name}}</h3>
+              <h4><sup>SAR</sup>{{webservice_package.price}}</h4>
               <ul>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-              </ul>
-              <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
-          </div>
+                <li><i class="bi bi-check"></i>تصميم احترافي: {{webservice_package.professional_design}}</li>
+                <li><i class="bi bi-check"></i>تعدد اللغات: {{webservice_package.multi_language}}</li>
 
-          <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item text-center">
-              <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
-              <h3>سيرفر خاص</h3>
-              <h4><sup>$</sup>0</h4>
-              <ul>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
+                <li>
+                {% if webservice_package.logo_design ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                تصميم شعار
+                </li>
+
+                <li>
+                {% if webservice_package.compatibility_with_browser ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 التوافق مع المتصفحات
+                </li>
+
+                <li>
+                {% if webservice_package.multiple_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                أقسام وصفحات غير محدودة
+                </li>
+
+                <li>
+                {% if webservice_package.live_chat ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                محادثة مباشرة
+                </li>
+
+                <li>
+                {% if webservice_package.adding__in_google ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                  اضافة الموقع في جوجل
+                </li>
+
+                <li>
+                {% if webservice_package.photo_and_video_gallery ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 معرض صور وفيديو
+                </li>
+
+                <li>
+                {% if webservice_package.adding_social_media_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 اضافة مواقع التواصل الاجتماعي
+                </li>
+
+                <li>
+                {% if webservice_package.service_request_forms ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                نموذج طلب خدمة
+                </li>
+
+                <li>
+                {% if webservice_package.product_and_shopping_cart ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                منتجات مع سلة المشتريات
+                </li>
+
+                <li>
+                {% if webservice_package.website_stats ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                احصائيات للموقع
+                </li>
+
+                <li>
+                {% if webservice_package.platform_upgrade ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                التحديث والترقيه للمنصة
+                </li>
+
+                <li>
+                {% if webservice_package.training__on_dashboard ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                تدريب على لوحة التحكم
+                </li>
+
+                <li>
+                {% if webservice_package.technical_support ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                الدعم الفني
+                </li>
+
+                <li>
+                {% if webservice_package.protection_and_security ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                الحماية
+                </li>
               </ul>
               <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
           </div>
+          {% endif %}
+
+
+          {% if webservice_package_2 %}
 
 
           <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-item text-center">
               <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
-              <h3>إنشاء متجر إلكتروني</h3>
-              <h4><sup>$</sup>0</h4>
+              <h3>{{webservice_package_2.package_name}}</h3>
+              <h4><sup>SAR</sup>{{webservice_package_2.price}}</h4>
               <ul>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
+                <li><i class="bi bi-check"></i>تصميم احترافي: {{webservice_package_2.professional_design}}</li>
+                <li><i class="bi bi-check"></i>تعدد اللغات: {{webservice_package_2.multi_language}}</li>
+
+                <li>
+                {% if webservice_package_2.logo_design ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                تصميم شعار
+                </li>
+
+                <li>
+                {% if webservice_package_2.compatibility_with_browser ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 التوافق مع المتصفحات
+                </li>
+
+                <li>
+                {% if webservice_package_2.multiple_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                أقسام وصفحات غير محدودة
+                </li>
+
+                <li>
+                {% if webservice_package_2.live_chat ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                محادثة مباشرة
+                </li>
+
+                <li>
+                {% if webservice_package_2.adding__in_google ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                  اضافة الموقع في جوجل
+                </li>
+
+                <li>
+                {% if webservice_package_2.photo_and_video_gallery ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 معرض صور وفيديو
+                </li>
+
+                <li>
+                {% if webservice_package_2.adding_social_media_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 اضافة مواقع التواصل الاجتماعي
+                </li>
+
+                <li>
+                {% if webservice_package_2.service_request_forms ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                نموذج طلب خدمة
+                </li>
+
+                <li>
+                {% if webservice_package_2.product_and_shopping_cart ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                منتجات مع سلة المشتريات
+                </li>
+
+                <li>
+                {% if webservice_package_2.website_stats ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                احصائيات للموقع
+                </li>
+
+                <li>
+                {% if webservice_package_2.platform_upgrade ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                التحديث والترقيه للمنصة
+                </li>
+
+                <li>
+                {% if webservice_package_2.training__on_dashboard ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                تدريب على لوحة التحكم
+                </li>
+
+                <li>
+                {% if webservice_package_2.technical_support ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                الدعم الفني
+                </li>
+
+                <li>
+                {% if webservice_package_2.protection_and_security ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                الحماية
+                </li>
               </ul>
               <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
           </div>
+          {% endif %}
+
+           {% if host_package %}
+          <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item text-center">
+              <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
+              <h3>{{host_package.package_name}}</h3>
+              <h4><sup>SAR</sup>{{host_package.price}}</h4>
+              <ul>
+                <li><i class="bi bi-check"></i>	الرام العشوائي: {{host_package.ram}}</li>
+                <li><i class="bi bi-check"></i>	الهارد ديسك: {{host_package.hard_drive}}</li>
+                <li><i class="bi bi-check"></i>	الترافيك: {{host_package.traffic}}</li>
+                <li><i class="bi bi-check"></i>	المعالج: {{host_package.processor}}</li>
+                <li><i class="bi bi-check"></i>	 عدد الملفات: {{host_package.number_of_files}}</li>
+                <li><i class="bi bi-check"></i>	عدد الاتصالات في اللحظة: {{host_package.number_of_connections_at_the_moment}}</li>
+                <li><i class="bi bi-check"></i>	عدد الايميلات: {{host_package.number_of__emails}}</li>
+                <li><i class="bi bi-check"></i>	عدد قواعد البيانات: {{host_package.number_of_databases}}</li>
+
+                <li>
+                {% if host_package.ssl_certificate ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                شهادة SSL
+                </li>
+
+                <li>
+                {% if host_package.ssh_access ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                SSH access
+                </li>
+
+                <li>
+                {% if host_package.hours_technical_support ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                دعم فني 24 ساعة
+                </li>
+
+              </ul>
+              <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
+          </div>
+          {% endif %}
+
 
         </div>
 
@@ -325,97 +614,83 @@
         </div>
 
       <div class="row owl-carousel owl-theme">
+
+       <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="../assets/space_secure/assets/img/customers/customer05.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><a href="#">SMART PRO</a></h4>
+                  <div>
+                    <a href="../assets/space_secure/assets/img/customers/customer05.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/space_secure/assets/img/customers/customer03.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><a href="#">Paris Secret</a></h4>
+                  <div>
+                    <a href="assets/space_secure/assets/img/customers/customer03.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <img src="assets/space_secure/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="assets/space_secure/assets/img/customers/customer01.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#">اسواق ومخابز النعمة</a></h4>
                   <div>
-                    <a href="assets/space_secure/assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="assets/space_secure/assets/img/customers/customer01.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="assets/space_secure/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="assets/space_secure/assets/img/customers/customer02.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#"> شركة بنيان المتحدة</a></h4>
                   <div>
-                    <a href="assets/space_secure/assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="assets/space_secure/assets/img/customers/customer02.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+         <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="assets/space_secure/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="assets/space_secure/assets/img/customers/customer04.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#">Top center</a></h4>
                   <div>
-                    <a href="assets/space_secure/assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="assets/space_secure/assets/img/customers/customer04.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="assets/space_secure/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="assets/space_secure/assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="assets/space_secure/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="assets/space_secure/assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="assets/space_secure/assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="assets/space_secure/assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+      </div>
 
       </div>
     </section>
@@ -436,7 +711,7 @@
                   </div>
 
                     <div class="form text-end">
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form  onsubmit="submitData(event)" method="post" role="form" class="php-email-form">
                         <div class="row">
                           <div class="form-group mt-3">
                             <input type="text" class="form-control" name="name" id="name" placeholder="اسمك هنا"  required>
@@ -452,14 +727,14 @@
                           <input type="text" class="form-control" name="subject" id="subject" placeholder="الموضوع" required>
                         </div>
                         <div class="form-group mt-3">
-                          <textarea class="form-control" name="message" rows="5" placeholder="التفاصيل" required></textarea>
+                          <textarea class="form-control" name="message" id="message" rows="5" placeholder="التفاصيل" required></textarea>
                         </div>
                         <div class="my-3">
                           <div class="loading">Loading</div>
                           <div class="error-message"></div>
                           <div class="sent-message">تم الإرسال بنجاح ، سنجيب على استفساركم في أسرع وقت ، شكراً لكم</div>
                         </div>
-                        <div class="text-center"><button type="submit" title="Send Message" class="btn  hvr-sweep-to-top btn-outline-success">إرسال الرسالة</button></div>
+                        <div class="text-center"><button type="submit"   title="Send Message" class="btn  hvr-sweep-to-top btn-outline-success">إرسال الرسالة</button></div>
                       </form>
                     </div>
                   </div>
@@ -509,4 +784,10 @@
   </main>
 <!-- End #main -->
 
+{% endblock %}
+
+
+{% block script %}
+
+  <script>{% include "templates/includes/servicerequest.js" %}</script>
 {% endblock %}

@@ -1,10 +1,9 @@
-{% extends 'templates/arabicBasePage.html' %}
+{% extends 'templates/enBasePage.html' %}
 
-{% block title %} طلب خدمة {% endblock %}
+{% block title %} Service Request  {% endblock %}
 
 {% block content %}
-
-  <main id="main" class="page">
+<main id="main" class="page">
 
     <!--breadcrumb-->
     <section id="order" class="breadcrumb-page pb-4">
@@ -13,9 +12,9 @@
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-arrow-bar-left fs-2 text-success"></i> طلب خدمة / شكوى / اقتراح </h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-arrow-bar-left fs-2 text-success"></i> Service Request / Complaint / Technical Support </h3>
                 <p class="card-text fs-6 text-secondary lh-lg" data-aos="fade-up">
-                 يرجى تعبئة هذا النموذج وسيتم التواصل معكم في أسرع وقت ممكن
+                  Please fill out this form and we will contact you as soon as possible
                 </p>
               </div>
             </div>
@@ -28,22 +27,22 @@
                <form  onsubmit="submitData(event)" method="post" role="form" class="php-email-form">
                         <div class="row">
                           <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="اسمك هنا"  required>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="your name "  required>
                           </div>
                           <div class="form-group col-lg-6 mt-3">
-                            <input type="tel" name="tel" class="form-control" id="tel" placeholder="رقم الجوال" required>
+                            <input type="tel" name="tel" class="form-control" id="tel" placeholder="Mobile number" required>
                           </div>
                           <div class="form-group col-lg-6 mt-3">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="البريد الإلكترونـي" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                           </div>
                         </div>
 
                         <div class="form-group mt-3 mb-3">
                           <select name="requesttype" id="requesttype"  class="form-select shadow-none serv-sel">
-                            <option name="requesttype" value="" selected>الموضوع</option>
-                            <option name="requesttype" value="srev">طلب خدمة</option>
-                            <option name="requesttype" value="grievance">تقديم شكوى</option>
-                            <option name="requesttype" value="sugg">الدعم الفني</option>
+                            <option name="requesttype" value="" selected>Service Subject</option>
+                            <option name="requesttype" value="srev">Service Request</option>
+                            <option name="requesttype" value="grievance">Complaint</option>
+                            <option name="requesttype" value="sugg">Technical Support</option>
                           </select>
                         </div>
 
@@ -51,9 +50,9 @@
                           <div class="form-group col-lg-6  mt-lg-0 mt-3">
                             <select name="service" id="service" class="form-select shadow-none">
 
-                               <option name="service" value="null" selected>اختر الخدمة </option>
+                               <option name="service" value="null" selected>Select Service </option>
                               {% for srvice in mainservices %}
-                              <option name="service" value="{{srvice['name']}}">{{srvice["arabic_service_name"]}}</option>
+                              <option name="service" value="{{srvice['name']}}">{{srvice["service_name"]}}</option>
                               {% endfor %}
 
                             </select>
@@ -61,9 +60,9 @@
                           <div class="form-group col-lg-6 mt-3 mt-lg-0 mt-3">
                             <select name="package" id="package" class="form-select shadow-none">
 
-                              <option name="package" value="null" selected>اختر الباقة</option>
+                              <option name="package" value="null" selected>Select Package</option>
                                {% for package in packages %}
-                              <option value="{{package['name']}}" name="package">{{package["package_name"]}}</option>
+                              <option value="{{package['name']}}" name="package">{{package["package_name_en"]}}</option>
 
                               {% endfor %}
                             </select>
@@ -71,13 +70,13 @@
                         </div>
 
                          <div class="form-group subj-grievance mb-3">
-                          <input type="text" name="complaint" class="form-control" id="complaint" placeholder="موضوع الشكوى" >
+                          <input type="text" name="complaint" class="form-control" id="complaint" placeholder="Subject of the complaint" >
                         </div>
                         <div class="form-group subj-sugg mb-3">
-                          <input type="text" name="support" class="form-control" id="support" placeholder="الموضوع" >
+                          <input type="text" name="support" class="form-control" id="support" placeholder="Subject" >
                         </div>
                         <div class="form-group mt-3">
-                          <textarea class="form-control" name="message" id="message" rows="5" placeholder="التفاصيل" required></textarea>
+                          <textarea class="form-control" name="message" id="message" rows="5" placeholder="Details" required></textarea>
                         </div>
 
                         <div class="my-3">
@@ -85,7 +84,7 @@
                           <div class="error-message"></div>
                           <div class="sent-message">تم الإرسال بنجاح ، سنجيب على استفساركم في أسرع وقت ، شكراً لكم</div>
                         </div>
-                        <div class="text-center"><button type="submit"   title="Send Message" class="btn  hvr-sweep-to-top btn-outline-success">إرسال الرسالة</button></div>
+                        <div class="text-center"><button type="submit"   title="Send Message" class="btn  hvr-sweep-to-top btn-outline-success">Send request</button></div>
                       </form>
 
             </div>
@@ -104,6 +103,7 @@
 
   <script>{% include "templates/includes/packagerequest.js" %}</script>
 {% endblock %}
+
 
 
 

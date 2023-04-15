@@ -1,89 +1,8 @@
-<!DOCTYPE html>
-<html lang="ar">
+{% extends 'templates/enBasePage.html' %}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+{% block title %} Home {% endblock %}
 
-  <title>اسم الموقع</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="../assets/img/features.svg" rel="icon">
-  <link href="../assets/img/features.svg" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/earlyaccess/notokufiarabic.css' rel='stylesheet' type='text/css'/>
-  <link href=' https://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'/>
-  <!-- /Fonts -->
-
-  <!-- CSS -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/Hover-master/css/hover.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <!-- /CSS -->
-
-</head>
-
-<body dir="ltr" class="ltr">
-
-  <!-- header -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent  header-scrolled">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-
-      <!-- brand -->
-      <a class="navbar-brand mx-4" href="index.html">
-        <img src="../assets/img/logo.svg" alt="" height="80">
-      </a>
-      <!-- /brand -->
- 
-      <!-- nav -->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html#hero">الرئيسية</a></li>
-          <li class="dropdown"><a href="cypersecurity.html"><span>خدمة الأمن السيبراني</span><i class="bi bi-plus fs-5 me-1"></i></a>
-            <ul>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>الوصول عن بعد</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>هجمات حجب الخدمة</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>جدار الحماية المتقدم</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>نظام منع الاختراق</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>المعلومات الأمنية وإدارة الأحداث</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>التشفير</a></li>
-            </ul>
-          </li>          
-          <li class="dropdown"><a href="hostservice.html"><span>خدمات تقنية</span><i class="bi bi-plus fs-5 me-1"></i></a>
-            <ul>
-              <li><a href="hostservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>سرفرات خاصة </a></li>
-              <li><a href="hostservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>سرفرات سحابية</a></li>
-              <li><a href="hostservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>استضافة ويندوز</a></li>            
-            </ul>
-          </li>  
-          <li class="dropdown"><a href="webservice.html"><span>تصميم المواقع والتطبيقات</span><i class="bi bi-plus fs-5 me-1"></i></a>
-            <ul>
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات أيفون </a></li>
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات أندرويد </a></li>
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة ألعاب</a></li>    
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات ويب</a></li>            
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات ويندوز</a></li>                    
-            </ul>
-          </li>      
-          <li><a class="scrollto" href="index.html#contact">اتصل بنا</a></li>
-          <li><a title="اللغة العربية" href="../index.html"><span class="badge bg-info link-hover p-2 rounded-circle"><i class="bi bi-translate fs-6"></i></span></a></li>
-          <li><a class="getstarted scrollto" href="الباقات.html"><span>البـاقـات</span></a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <!-- /nav -->
-
-    </div>
-  </header>
-  <!-- /header -->
+{% block content %}
 
   <!-- hero Section -->
   <section id="hero">
@@ -98,7 +17,7 @@
                 We offer services hosting comprehensive with the possibilities of getting advanced results,
                  <br> hosting sites to design your site so as to ensure more targeted customers and more sales, and even protecting your company from electronic attacks.
                   <br>We offer solutions to cybersecurity that help protect organizations from cyber attacks.
-              </p> 
+              </p>
               <a href="#services" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Our services <i class="bi bi-chevron-double-down"></i></a>
             </div>
           </div>
@@ -138,10 +57,10 @@
               </div>
               <div class="card-body text-end p-0" data-aos="fade-up">
                 <p class="card-text fs-6 text-secondary lh-lg" style="text-align: justify;">
-                  Space Scure Corporation is one of the most important organizations in the Kingdom of Saudi Arabia and is dedicated to providing cyber security solutions to companies and organizations of all sizes. 
+                  Space Scure Corporation is one of the most important organizations in the Kingdom of Saudi Arabia and is dedicated to providing cyber security solutions to companies and organizations of all sizes.
                   <br>We also provide web and application design services and provide integrated hosting with amazing capabilities that enable you to obtain advanced results through an integrated team characterized by experience and high efficiency.
-                  <br> We pride ourselves on our ability to deliver reliable and effective solutions that keep our customers safe and secure in the digital age. 
-                </p>              
+                  <br> We pride ourselves on our ability to deliver reliable and effective solutions that keep our customers safe and secure in the digital age.
+                </p>
               </div>
               <div class="card-footer border-0 p-0 bg-transparent text-start" data-aos="fade-up">
                 <a href="#work" class="btn  hvr-sweep-to-top btn-primary ms-4 me-4">how we doing? <i class="bi bi-arrow-left"></i></a>
@@ -150,7 +69,7 @@
           </div>
 
           <div class="col-lg-5 background aos-init aos-animate" data-aos="zoom-in">
-            <img src="../assets/img/details-1.png" class="img-fluid" alt="">
+            <img src="../assets/space_secure/assets/img/details-1.png" class="img-fluid" alt="">
           </div>
           <div class="col-12" id="work">
             <div class="row">
@@ -159,8 +78,8 @@
                   <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-arrow-left-right fs-2 text-success"></i> how we doing? </h3>
                   <p class="card-text fs-6 text-secondary lh-lg" data-aos="fade-up" style="text-align: justify;">
                     The Space Secure Corporation has developed its own strategies for implementing projects by drawing and planning technical analysis using workflow techniques,
-                     drawing graphical interfaces using sketches, and then developing the project using Agile technology. 
-                    <br>Ensure project delivery with the best quality.                  
+                     drawing graphical interfaces using sketches, and then developing the project using Agile technology.
+                    <br>Ensure project delivery with the best quality.
                   </p>
                 </div>
               </div>
@@ -188,7 +107,7 @@
                   <h4 class="title"><a>Quality</a></h4>
                 </div>
               </div>
-  
+
             </div>
           </div>
         </div>
@@ -206,9 +125,9 @@
             <div class="card border-0">
               <div class="card-body text-center p-1">
                 <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-hdd-rack fs-2 text-success"></i> Our services </h3>
-               
+
               </div>
-            </div>        
+            </div>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -216,13 +135,13 @@
             <div class="card box-serv">
               <div class="card-header px-4 d-flex justify-content-center align-items-center border-0 bg-transparent">
                 <span class="box-icon-se" ><i class="bi bi-shield-check fs-4"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-info mt-2">Cyber ​​security</h5>
+                <h5 class="card-title fw-bold fs-5 text-info mt-2">Cyber Security</h5>
               </div>
               <div class="card-body pt-0">
                 <p class="card-text text-secondary lh-lg fs-6" style="text-align: justify;">
                   We help you with technical processes and controls to identify, classify, and handle data securely.
                   We also  develop a plan to assess and track security vulnerabilities.</p>
-                <a href="cypersecurity.html" class="btn hvr-sweep-to-top btn-primary mt-2 ms-4 me-4">Details <i class="bi bi-arrow-down"></i></a>
+                <a href="cypersecurity" class="btn hvr-sweep-to-top btn-primary mt-2 ms-4 me-4">Details <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -236,7 +155,7 @@
                 <p class="card-text text-secondary lh-lg fs-6" style="text-align: justify;">
                   Design websites that guarantee you more customers and increase sales.
                    <br> Our mission is to help you design your own website and application in order to ensure that you impress your customers. </p>
-                <a href="webservice.html" class="btn hvr-sweep-to-top btn-primary mt-2 ms-4 me-4">Details <i class="bi bi-arrow-down"></i></a>
+                <a href="webservice" class="btn hvr-sweep-to-top btn-primary mt-2 ms-4 me-4">Details <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -250,7 +169,7 @@
                 <p class="card-text text-secondary lh-lg fs-6" style="text-align: justify;">
                   Providing integrated hosting services with amazing capabilities that guarantee your site continuity and speed to keep your customers and get advanced results.
                                </p>
-                <a href="hostservice.html" class="btn hvr-sweep-to-top btn-primary mt-2 ms-4 me-4">Details <i class="bi bi-arrow-down"></i></a>
+                <a href="hostservice" class="btn hvr-sweep-to-top btn-primary mt-2 ms-4 me-4">Details <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -268,55 +187,382 @@
             <div class="card border-0">
               <div class="card-body text-center p-1">
                 <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-diagram-3-fill fs-2 text-success"></i> Latest Packages </h3>
-               
+
               </div>
-            </div>        
+            </div>
           </div>
         </div>
         <div class="row justify-content-center gy-4 mt-2">
-
-          <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item text-center">
-              <span class="box-icon-se" ><i class="bi bi-shield-check fs-1"></i></span>
-              <h3>حماية من الهجمات</h3>
-              <h4><sup>$</sup>0</h4>
-              <ul>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-              </ul>
-              <a href="طلب خدمة.html" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
-          </div>
-
-          <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item text-center">
-              <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
-              <h3>سيرفر خاص</h3>
-              <h4><sup>$</sup>0</h4>
-              <ul>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-              </ul>
-              <a href="طلب خدمة.html" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
-          </div>
-
-
+          {% if webservice_package %}
           <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-item text-center">
               <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
-              <h3>إنشاء متجر إلكتروني</h3>
-              <h4><sup>$</sup>0</h4>
+           <h3>{{webservice_package.package_name_en}}</h3>
+              <h4><sup>SAR</sup>{{webservice_package.price}}</h4>
               <ul>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
-                <li><i class="bi bi-check"></i> هذا النص هو مثال لنص.</li>
+
+                   <li><i class="bi bi-check"></i>
+                     Professional Design:
+                     <br>
+                  {% if webservice_package.professional_design =="اختيار قالب" %}
+                    Chose template
+                  {% elif webservice_package.professional_design =="تصميم خاص"  %}
+                    Special Design
+                  {% elif webservice_package.professional_design =="غير محدود"  %}
+                  Unlimited
+                  {% endif %}
+                  </li>
+
+                <li><i class="bi bi-check"></i>Language:
+
+                  {% if webservice_package.multi_language =="عربي فقط" %}
+                    Arabic only
+                  {% elif webservice_package.multi_language =="عربي انجليزي"  %}
+                    Arabic English
+                  {% elif webservice_package.multi_language =="اكثر من لغة"  %}
+                   <br>Multi Language
+                  {% endif %}
+                  </li>
+
+                <li>
+                {% if webservice_package.logo_design ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Logo Design
+                </li>
+
+                <li>
+                {% if webservice_package.compatibility_with_browser ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 Browser compatibility
+                </li>
+
+                <li>
+                {% if webservice_package.multiple_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Unlimited pages
+                </li>
+
+                <li>
+                {% if webservice_package.live_chat ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Live chat
+                </li>
+
+                <li>
+                {% if webservice_package.adding__in_google ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 Add website in Google
+                </li>
+
+                <li>
+                {% if webservice_package.photo_and_video_gallery ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Photo & Video Gallery
+                </li>
+
+                <li>
+                {% if webservice_package.adding_social_media_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 Add Social Media
+                </li>
+
+                <li>
+                {% if webservice_package.service_request_forms ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Service Request Form
+                </li>
+
+                <li>
+                {% if webservice_package.product_and_shopping_cart ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Products with cart
+                </li>
+
+                <li>
+                {% if webservice_package.website_stats ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Website Stats
+                </li>
+
+                <li>
+                {% if webservice_package.platform_upgrade ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                upgrade of the platform
+                </li>
+
+                <li>
+                {% if webservice_package.training__on_dashboard ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Control panel training
+                </li>
+
+                <li>
+                {% if webservice_package.technical_support ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Technical Support
+                </li>
+
+                <li>
+                {% if webservice_package.protection_and_security ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Protection
+                </li>
               </ul>
-              <a href="طلب خدمة.html" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
+              <a href="servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>            </div>
           </div>
+          {% endif %}
+
+
+
+          {% if webservice_package_2 %}
+          <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item text-center">
+              <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
+              <h3>{{webservice_package_2.package_name}}</h3>
+              <h4><sup>SAR</sup>{{webservice_package_2.price}}</h4>
+              <ul>
+                <li><i class="bi bi-check"></i>
+                     Professional Design:
+                     <br>
+                  {% if webservice_package_2.professional_design =="اختيار قالب" %}
+                    Chose template
+                  {% elif webservice_package_2.professional_design =="تصميم خاص"  %}
+                    Special Design
+                  {% elif webservice_package_2.professional_design =="غير محدود"  %}
+                  Unlimited
+                  {% endif %}
+                  </li>
+
+                <li><i class="bi bi-check"></i> Language:
+
+                  {% if webservice_package_2.multi_language =="عربي فقط" %}
+                    Arabic only
+                  {% elif webservice_package_2.multi_language =="عربي انجليزي"  %}
+                    Arabic English
+                  {% elif webservice_package_2.multi_language =="اكثر من لغة"  %}
+                  <br> Multi Language
+                  {% endif %}
+                  </li>
+                <li>
+                {% if webservice_package_2.logo_design ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Logo Design
+                </li>
+
+                <li>
+                {% if webservice_package_2.compatibility_with_browser ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 Browser compatibility
+                </li>
+
+                <li>
+                {% if webservice_package_2.multiple_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Unlimited pages
+                </li>
+
+                <li>
+                {% if webservice_package_2.live_chat ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Live chat
+                </li>
+
+                <li>
+                {% if webservice_package_2.adding__in_google ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 Add website in Google
+                </li>
+
+                <li>
+                {% if webservice_package_2.photo_and_video_gallery ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Photo & Video Gallery
+                </li>
+
+                <li>
+                {% if webservice_package_2.adding_social_media_pages ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 Add Social Media
+                </li>
+
+                <li>
+                {% if webservice_package_2.service_request_forms ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Service Request Form
+                </li>
+
+                <li>
+                {% if webservice_package_2.product_and_shopping_cart ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Products with cart
+                </li>
+
+                <li>
+                {% if webservice_package_2.website_stats ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Website Stats
+                </li>
+
+                <li>
+                {% if webservice_package_2.platform_upgrade ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                upgrade of the platform
+                </li>
+
+                <li>
+                {% if webservice_package_2.training__on_dashboard ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Control panel training
+                </li>
+
+                <li>
+                {% if webservice_package_2.technical_support ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Technical Support
+                </li>
+
+                <li>
+                {% if webservice_package_2.protection_and_security ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                Protection
+                </li>
+              </ul>
+              <a href="servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
+          </div>
+          {% endif %}
+
+           {% if host_package %}
+          <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item text-center">
+              <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
+              <h3>{{host_package.package_name_en}}</h3>
+              <h4><sup>SAR</sup>{{host_package.price}}</h4>
+              <ul>
+                <li><i class="bi bi-check"></i>	RAM: {{host_package.ram}}</li>
+                <li><i class="bi bi-check"></i>	Hard disk: {{host_package.hard_drive}}</li>
+                <li><i class="bi bi-check"></i>	Traffic: {{host_package.traffic}}</li>
+                <li><i class="bi bi-check"></i>	CPU: {{host_package.processor}}</li>
+                <li><i class="bi bi-check"></i>	Number of files: {{host_package.number_of_files}}</li>
+                <li><i class="bi bi-check"></i> connections per moment: {{host_package.number_of_connections_at_the_moment}}</li>
+                <li><i class="bi bi-check"></i>	Number of Emails: {{host_package.number_of__emails}}</li>
+                <li><i class="bi bi-check"></i>	Number of databases: {{host_package.number_of_databases}}</li>
+
+                <li>
+                {% if host_package.ssl_certificate ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                 SSL certificate
+                </li>
+
+                <li>
+                {% if host_package.ssh_access ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                SSH access
+                </li>
+
+                <li>
+                {% if host_package.hours_technical_support ==1 %}
+                  <i class="bi bi-check"></i>
+                {% else %}
+                  <i class="bi bi-x"></i>
+                {% endif %}
+                  technical support
+                </li>
+
+              </ul>
+              <a href="servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>            </div>
+          </div>
+          {% endif %}
+
 
         </div>
 
@@ -331,65 +577,65 @@
               <div class="col-12 text-center">
                 <div class="card border-0">
                   <div class="card-body text-center p-1">
-                    <h3 class="card-title lh-base fs-4 fw-bold mb-3 text-primary" data-aos="fade-left"><i class="bi bi-check2-square fs-1 text-success"></i> Partners</h3>            
-                    
+                    <h3 class="card-title lh-base fs-4 fw-bold mb-3 text-primary" data-aos="fade-left"><i class="bi bi-check2-square fs-1 text-success"></i> Partners</h3>
+
                   </div>
-                </div>        
+                </div>
               </div>
             </div>
             <div class="row g-0 clients-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
 
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo01.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo01.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo02.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo02.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo03.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo03.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo04.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo04.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo05.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo05.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo06.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo06.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo07.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo07.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src="../assets/img/partners/logo08.png" class="img-fluid" alt="">
+                  <img src="../assets/space_secure/assets/img/partners/logo08.png" class="img-fluid" alt="">
                 </div>
               </div>
-    
+
             </div>
-    
-    
+
+
           </div>
         </section>
         <!-- /Portfolio Section -->
@@ -401,116 +647,93 @@
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title lh-base fs-4 fw-bold mb-3 text-primary" data-aos="fade-left"><i class="bi bi-briefcase fs-1 text-success"></i> Business Gallery</h3>            
+                <h3 class="card-title lh-base fs-4 fw-bold mb-3 text-primary" data-aos="fade-left"><i class="bi bi-briefcase fs-1 text-success"></i> Business Gallery</h3>
                 <p class="card-text fs-6 text-secondary lh-lg" data-aos="fade-up">
-                  These partners, we have provided them with various services, integrated electronic portals, internal government systems, internal and cloud servers, and professional software applications.                 </p> 
+                  These partners, we have provided them with various services, integrated electronic portals, internal government systems, internal and cloud servers, and professional software applications.                 </p>
               </div>
-            </div>        
+            </div>
           </div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-none">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">الكل</li>
-              <li data-filter=".filter-app">نوع العمل 1</li>
-              <li data-filter=".filter-app">نوع العمل 2</li>
-              <li data-filter=".filter-app">نوع العمل 3</li>
-              <li data-filter=".filter-app">نوع العمل 4</li>
-            </ul>
-          </div>
-          
+
+
         </div>
         <div class="row owl-carousel owl-theme">
+
+              <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="../assets/space_secure/assets/img/customers/customer05.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><a href="#">SMART PRO</a></h4>
+                  <div>
+                    <a href="../assets/space_secure/assets/img/customers/customer05.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="../assets/space_secure/assets/img/customers/customer03.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><a href="#">Paris Secret</a></h4>
+                  <div>
+                    <a href="../assets/space_secure/assets/img/customers/customer03.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="../assets/space_secure/assets/img/customers/customer01.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#">اسواق ومخابز النعمة</a></h4>
                   <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="../assets/space_secure/assets/img/customers/customer01.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
+
           <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="../assets/space_secure/assets/img/customers/customer02.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#"> شركة بنيان المتحدة</a></h4>
                   <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="../assets/space_secure/assets/img/customers/customer02.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          </div>
+
+         <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="../assets/space_secure/assets/img/customers/customer04.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#">Top center</a></h4>
                   <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="../assets/space_secure/assets/img/customers/customer04.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
+          </div>
+
         </div>
 
       </div>
@@ -530,9 +753,9 @@
                         <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-chat-right-dots-fill fs-2 text-success"></i> Contact Us</h3>
                       </div>
                   </div>
-        
+
                     <div class="form text-end">
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form  onsubmit="submitData(event)"  method="post" role="form" class="php-email-form">
                         <div class="row">
                           <div class="form-group mt-3">
                             <input type="text" class="form-control" name="name" id="name" placeholder="Your name"  required>
@@ -548,7 +771,7 @@
                           <input type="text" class="form-control" name="subject" id="subject" placeholder="Messaging topic" required>
                         </div>
                         <div class="form-group mt-3">
-                          <textarea class="form-control" name="message" rows="5" placeholder="Details" required></textarea>
+                          <textarea class="form-control" name="message" id="message" rows="5" placeholder="Details" required></textarea>
                         </div>
                         <div class="my-3">
                           <div class="loading">Loading</div>
@@ -578,20 +801,20 @@
                         <h4>Address:</h4>
                         <p>Building No. 7921-3733, Adh Dhahli Street, Al Murabba Dist,, Riyadh 12612</p>
                       </div>
-      
+
                       <div class="time">
                         <i class="bi bi-phone"></i>
                         <h4>working hours:</h4>
-                        <p>Saturday - Wednesday: <span>8:00 - 3:30</span></p>
-                        <p>Thursday: <span>8:00 - 3:30</span></p>
+                        <p>Saturday - Thursday:</p>
+                        <p><span>8:00 - 3:30</span></p>
                       </div>
-        
+
                     </div>
-        
+
                   </div>
                   <div class="col-12 col-lg-3 text-end">
                     <div class="map mt-4">
-                      <iframe style="border: 3px solid var(--bs-info);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.552755041714!2d46.7308631!3d24.673518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f055f78ca7e71%3A0xcc683f21d51947d2!2zU3BhY2Ugc2VjdXJlIHwg2YXYpNiz2LPYqSDYp9mE2YHYttin2KEg2KfZhNii2YXZhtmH!5e0!3m2!1sen!2ssa!4v1679753942995!5m2!1sen!2ssa" width="350" height="350" ></iframe>                        
+                      <iframe style="border: 3px solid var(--bs-info);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.552755041714!2d46.7308631!3d24.673518400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f055f78ca7e71%3A0xcc683f21d51947d2!2zU3BhY2Ugc2VjdXJlIHwg2YXYpNiz2LPYqSDYp9mE2YHYttin2KEg2KfZhNii2YXZhtmH!5e0!3m2!1sen!2ssa!4v1679753942995!5m2!1sen!2ssa" width="350" height="350" ></iframe>
                     </div>
                   </div>
                 </div>
@@ -604,98 +827,15 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="pt-4">
-    <div class="footer-top pb-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-10 col-md-6 text-end footer-newsletter" style="z-index: 50;">
-            <a class="navbar-brand" href="#">
-              <img src="../assets/img/logo_white.svg" alt="" height="100">
-            </a>
-            <p style="text-align: justify;" class="mt-2 lh-lg">
-              Secure Space Corporation is one of the most important organizations in the Kingdom of Saudi Arabia that is dedicated to providing cybersecurity solutions to companies and organizations of all sizes.
-            <div class="social-links my-4">
-              <a href="https://twitter.com/SpaceSecur" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/people/%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A2%D9%85%D9%86/100089902982803/?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.tiktok.com/@spacesecur" class="tiktok"><i class="bi bi-tiktok"></i></a>
-              <a href="https://www.instagram.com/spacesecur/" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/spacesecure/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="col-md-6 col-10 col-lg footer-links">
-            <h5><span>Cyber ​​security</span></h5>
-            <ul>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>الوصول عن بعد</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>هجمات حجب الخدمة</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>جدار الحماية المتقدم</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>نظام منع الاختراق</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>المعلومات الأمنية وإدارة الأحداث</a></li>
-              <li><a href="cypersecurity.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>التشفير</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-10 col-lg footer-links">
-            <h5><span>Hosting services</span></h5>
-            <ul>
-              <li><a href="hostservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>سرفرات خاصة </a></li>
-              <li><a href="hostservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>سرفرات سحابية</a></li>
-              <li><a href="hostservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>استضافة ويندوز</a></li>            
-            </ul>
-          </div>
-          <div class="col-md-6 col-10 col-lg footer-links">
-            <h5><span>Website & Application design </span></h5>
-            <ul>
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات أيفون </a></li>
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات أندرويد </a></li>
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة ألعاب</a></li>    
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات ويب</a></li>            
-              <li><a href="webservice.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات ويندوز</a></li>                    
-            </ul>
-          </div>
+{% endblock %}
 
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="bg-success bottom-footer m-0 p-0 py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center" style="z-index: 50;">
-            <div class="text-white fs-6">
-              All rights reserved <a class="fw-bold namesite" href="#">Spase Secure</a> &copy; 2023
-            </div>
-         
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+
+{% block script %}
+
+  <script>{% include "templates/includes/servicerequest.js" %}</script>
+{% endblock %}
 
 
 
 
-
-
-
-  <div class="whatsapp-fixed"><a href="https://api.whatsapp.com/send?phone=00966506512697" target="_blank" title="whatsapp"><i class="bi bi-whatsapp"></i></a></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader">
-    <img class="img-fluid" src="../assets/img/features.svg" width="100px" alt="">
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/jQuery/jquery-3.6.0.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-  
-</body>
-
-</html>

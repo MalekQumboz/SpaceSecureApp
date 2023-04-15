@@ -6,6 +6,16 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title> {% block title %} {% endblock %}</title>
+
+<!--  frappe css-->
+  <link type="text/css" rel="stylesheet" href="/assets/css/erpnext-web.css?ver=1678112186.0">
+<!--  frappe css-->
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,9 +39,22 @@
   <link href="assets/space_secure/assets/css/style.css" rel="stylesheet">
   <!-- /CSS -->
 
+<!--frappe script-->
+  <script>
+		window.frappe = {};
+		frappe.ready_events = [];
+		frappe.ready = function(fn) {
+			frappe.ready_events.push(fn);
+		}
+		window.dev_server = 1;
+		window.socketio_port = 9000;
+		window.show_language_picker = 0;
+	</script>
+<!--frappe script-->
+
 </head>
 
-<body dir="rtl">
+<body dir="rtl"  frappe-session-status="logged-in" data-path="update-profile" class="">
 
   <!-- header -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent  header-scrolled">
@@ -173,6 +196,29 @@
   <!-- Template Main JS File -->
   <script src="assets/space_secure/assets/js/main.js"></script>
 
+
+
+  {% block base_scripts %}
+
+<!-- js should be loaded in body! -->
+<!--<script type="text/javascript" src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>-->
+<script type="text/javascript" src="/assets/js/frappe-web.min.js"></script>
+<script type="text/javascript" src="/assets/js/control.min.js"></script>
+<script type="text/javascript" src="/assets/js/dialog.min.js"></script>
+<!--<script type="text/javascript" src="/assets/js/bootstrap-4-web.min.js"></script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    {% endblock %}
+
+    {%- for link in web_include_js %}
+    <script type="text/javascript" src="{{ link | abs_url }}"></script>
+    {%- endfor -%}
+
+    {%- block script %}
+    {%- endblock %}
+    <!-- csrf_token -->
+    {%- block body_include %}{{ body_include or "" }}{% endblock -%}
 
 </body>
 

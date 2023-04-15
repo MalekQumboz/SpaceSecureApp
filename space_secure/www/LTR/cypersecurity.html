@@ -1,89 +1,8 @@
-<!DOCTYPE html>
-<html lang="ar">
+{% extends 'templates/enBasePage.html' %}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+{% block title %} Cyper Security {% endblock %}
 
-  <title>اسم الموقع</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="../assets/img/features.svg" rel="icon">
-  <link href="../assets/img/features.svg" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/earlyaccess/notokufiarabic.css' rel='stylesheet' type='text/css'/>
-  <link href=' https://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'/>
-  <!-- /Fonts -->
-
-  <!-- CSS -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/Hover-master/css/hover.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <!-- /CSS -->
-
-</head>
-
-<body dir="ltr" class="ltr">
-
-  <!-- header -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent  header-scrolled">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-
-      <!-- brand -->
-      <a class="navbar-brand mx-4" href="index.html">
-        <img src="../assets/img/logo.svg" alt="" height="80">
-      </a>
-      <!-- /brand -->
- 
-      <!-- nav -->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html#hero">الرئيسية</a></li>
-          <li class="dropdown"><a href="الأمن السيبراني.html"><span>خدمة الأمن السيبراني</span><i class="bi bi-plus fs-5 me-1"></i></a>
-            <ul>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>الوصول عن بعد</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>هجمات حجب الخدمة</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>جدار الحماية المتقدم</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>نظام منع الاختراق</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>المعلومات الأمنية وإدارة الأحداث</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>التشفير</a></li>
-            </ul>
-          </li>          
-          <li class="dropdown"><a href="الخدمات التقنية.html"><span>خدمات تقنية</span><i class="bi bi-plus fs-5 me-1"></i></a>
-            <ul>
-              <li><a href="الخدمات التقنية.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>سرفرات خاصة </a></li>
-              <li><a href="الخدمات التقنية.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>سرفرات سحابية</a></li>
-              <li><a href="الخدمات التقنية.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>استضافة ويندوز</a></li>            
-            </ul>
-          </li>  
-          <li class="dropdown"><a href="تصميم المواقع والتطبيقات.html"><span>تصميم المواقع والتطبيقات</span><i class="bi bi-plus fs-5 me-1"></i></a>
-            <ul>
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات أيفون </a></li>
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات أندرويد </a></li>
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة ألعاب</a></li>    
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات ويب</a></li>            
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات ويندوز</a></li>                    
-            </ul>
-          </li>      
-          <li><a class="scrollto" href="index.html#contact">اتصل بنا</a></li>
-          <li><a title="اللغة العربية" href="../index.html"><span class="badge bg-info link-hover p-2 rounded-circle"><i class="bi bi-translate fs-6"></i></span></a></li>
-          <li><a class="getstarted scrollto" href="الباقات.html"><span>البـاقـات</span></a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-      <!-- /nav -->
-
-    </div>
-  </header>
-  <!-- /header -->
+{% block content %}
 
   <main id="main" class="page">
 
@@ -96,7 +15,7 @@
           <div class="col-lg-6 order-2 order-lg-1 content ">
             <div class="card border-0 shadow-none bg-transparent">
               <div class="card-header bg-transparent border-0" data-aos="fade-up">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-shield-check fs-2 text-success"></i> Cyber ​​security</h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold"><i class="bi bi-shield-check fs-2 text-success"></i> Cyber Security</h3>
               </div>
               <div class="card-body text-end p-0" data-aos="fade-up">
                 <p class="card-text fs-6 text-secondary lh-lg" style="text-align: justify;">
@@ -105,13 +24,13 @@
                 </p>              
               </div>
               <div class="card-footer border-0 p-0 bg-transparent text-start" data-aos="fade-up">
-                <a href="طلب خدمة.html" class="btn  hvr-sweep-to-top btn-danger ms-4 me-4">Request Service Now <i class="bi bi-arrow-left"></i></a>
+                <a href="servicerequest" class="btn  hvr-sweep-to-top btn-danger ms-4 me-4">Request Service Now <i class="bi bi-arrow-left"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 order-1 order-lg-2 background aos-init aos-animate" data-aos="zoom-in">
-            <img src="../assets/img/details-1.png" class="img-fluid" alt="">
+            <img src="../assets/space_secure/assets/img/details-1.png" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -145,7 +64,8 @@
               </div>
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  We provide remote monitoring and management through our unified information security center to ensure that security incidents are resolved quickly and efficiently.                <a href="الباقات.html" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
+                  We provide remote monitoring and management through our unified information security center to ensure that security incidents are resolved quickly and efficiently.
+                  <a href="package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -159,7 +79,7 @@
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
                   We have high experience in monitoring and protecting against denial-of-service or denial-of-service attacks, which are attacks that are carried out by flooding sites with a torrent of unnecessary data.                 </p>
-                <a href="الباقات.html" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages<i class="bi bi-arrow-down"></i></a>
+                <a href="package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages<i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -173,7 +93,7 @@
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
                   Encryption is the conversion of data into a form called ciphertext, so that it is not easily understood by unauthorized people, so that it becomes difficult for eavesdroppers or hackers to read it.                 </p>
-                <a href="الباقات.html" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
+                <a href="package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -188,7 +108,7 @@
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
                   There are many ways to classify intrusion detection systems based on the type and location of sensors and the methodologies used on this engine to generate alerts in many simple intrusion detection systems.                 </p>
-                <a href="الباقات.html" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
+                <a href="package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -202,7 +122,7 @@
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
                   Information Security Management and Event Management (SIEM) products and services combine Security Information Management (SIM) and Security Event Management (SEM). It provides real-time analysis of security alerts generated by applications and network devices.                 </p>
-                <a href="الباقات.html" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
+                <a href="package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -216,7 +136,7 @@
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
                   Work with the organization to assess its current security situation and identify areas for improvement. This can include conducting risk assessments, developing security policies and procedures, and providing training to employees.                 </p>
-                <a href="الباقات.html" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
+                <a href="package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
@@ -235,65 +155,57 @@
             <div class="card-header text-center bg-transparent border-0">
               <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-arrow-left-right fs-2 text-success"></i> Our advantages </h3>
               <p class="card-text fs-6 text-secondary lh-lg" data-aos="fade-up">
-                Exclusive features provided by the Space Secure Corporation to its customers               </p>
+                Exclusive features provided by the Space Secure Corporation to its customers
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-md-3 my-4">
+            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
+              <h4 class="title"><a>Network Security</a></h4>
             </div>
           </div>
           <div class="col-6 col-md-3 my-4">
             <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
+              <h4 class="title"><a>Performance Monitoring</a></h4>
+            </div>
+          </div>
+           <div class="col-6 col-md-3 my-4">
+            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
+              <h4 class="title"><a>Application Security</a></h4>
             </div>
           </div>
           <div class="col-6 col-md-3 my-4">
             <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
+              <h4 class="title"><a>Discovery & Response</a></h4>
+            </div>
+          </div>
+           <div class="col-6 col-md-3 my-4">
+            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
+              <h4 class="title"><a>Powerful Resource Hosting</a></h4>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-md-3 my-4">
+            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
+              <h4 class="title"><a>Access and identity management</a></h4>
             </div>
           </div>
           <div class="col-6 col-md-3 my-4">
             <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
+              <h4 class="title"><a>Cloud Security & Compliance</a></h4>
             </div>
           </div>
-          <div class="col-6 col-md-3 my-4">
-            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 my-4">
-            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 my-4">
-            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 my-4">
-            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 my-4">
-            <div class="icon-box shadow aos-init" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-brightness-alt-high-fill fs-1"></i></div>
-              <h4 class="title"><a>خصوصية مشروعك</a></h4>
-              <p class="description">هذا النص هو مثال لنص يمكن</p>
-            </div>
-          </div>
+
         </div>
 
       </div>
@@ -307,119 +219,88 @@
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title lh-base fs-4 fw-bold mb-3 text-primary" data-aos="fade-left"><i class="bi bi-briefcase fs-1 text-success"></i> أعمالنا المشابهة</h3>            
-                <p class="card-text fs-6 text-secondary lh-lg" data-aos="fade-up">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.
-                </p> 
+                <h3 class="card-title lh-base fs-4 fw-bold mb-3 text-primary" data-aos="fade-left"><i class="bi bi-briefcase fs-1 text-success"></i> Business Gallery</h3>
+
               </div>
             </div>        
           </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-none">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">الكل</li>
-              <li data-filter=".filter-app">نوع العمل 1</li>
-              <li data-filter=".filter-app">نوع العمل 2</li>
-              <li data-filter=".filter-app">نوع العمل 3</li>
-              <li data-filter=".filter-app">نوع العمل 4</li>
-            </ul>
-          </div>
-          <div class="col-12 text-start">
-            <a href="#" class="btn hvr-sweep-to-top btn-outline-success my-4">مشاهدة المزيد <i class="bi bi-arrow-left"></i></a>
-          </div>
-        </div>
+
         <div class="row owl-carousel owl-theme">
+
+              <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="../assets/space_secure/assets/img/customers/customer05.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><a href="#">SMART PRO</a></h4>
+                  <div>
+                    <a href="../assets/space_secure/assets/img/customers/customer05.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="../assets/space_secure/assets/img/customers/customer03.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><a href="#">Paris Secret</a></h4>
+                  <div>
+                    <a href="../assets/space_secure/assets/img/customers/customer03.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="../assets/space_secure/assets/img/customers/customer01.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#">اسواق ومخابز النعمة</a></h4>
                   <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="../assets/space_secure/assets/img/customers/customer01.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
+
           <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="../assets/space_secure/assets/img/customers/customer02.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#"> شركة بنيان المتحدة</a></h4>
                   <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="../assets/space_secure/assets/img/customers/customer02.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          </div>
+
+         <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <img src="../assets/space_secure/assets/img/customers/customer04.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
+                  <h4><a href="#">Top center</a></h4>
                   <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="../assets/space_secure/assets/img/customers/customer04.png" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
                     <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class="portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-12 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="../assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><a href="#">عنوان هنا</a></h4>
-                  <p>Web</p>
-                  <div>
-                    <a href="../assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
-                    <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
+          </div>
         </div>
 
       </div>
@@ -427,101 +308,4 @@
     <!-- /Portfolio Section -->
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="pt-4">
-    <div class="footer-top pb-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-10 col-md-6 text-end footer-newsletter" style="z-index: 50;">
-            <a class="navbar-brand" href="#">
-              <img src="../assets/img/logo_white.svg" alt="" height="100">
-            </a>
-            <p style="text-align: justify;" class="mt-2 lh-lg">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص.
-            </p>
-            <div class="social-links my-4">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="col-md-6 col-10 col-lg footer-links">
-            <h4><span> الأمن السيبراني</span></h4>
-            <ul>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>الوصول عن بعد</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>هجمات حجب الخدمة</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>جدار الحماية المتقدم</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>نظام منع الاختراق</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>المعلومات الأمنية وإدارة الأحداث</a></li>
-              <li><a href="الأمن السيبراني.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>التشفير</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-10 col-lg footer-links">
-            <h4><span>الخدمات التقنية</span></h4>
-            <ul>
-              <li><a href="الخدمات التقنية.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>سرفرات خاصة </a></li>
-              <li><a href="الخدمات التقنية.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>سرفرات سحابية</a></li>
-              <li><a href="الخدمات التقنية.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>استضافة ويندوز</a></li>            
-            </ul>
-          </div>
-          <div class="col-md-6 col-10 col-lg footer-links">
-            <h4><span>تصميم المواقع والتطبيقات</span></h4>
-            <ul>
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات أيفون </a></li>
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات أندرويد </a></li>
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة ألعاب</a></li>    
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات ويب</a></li>            
-              <li><a href="تصميم المواقع والتطبيقات.html"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات ويندوز</a></li>                    
-            </ul>
-          </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-success bottom-footer m-0 p-0 py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center" style="z-index: 50;">
-            <div class="text-white fs-6">
-              جميع الحقوق محفوظة لشركة <a class="fw-bold namesite" href="#">اسم الموقع</a> &copy; 2023
-            </div>
-            <div>
-              <a href="https://nawjh.site/" target="_blank" class="text-white fw-bold" style="font-size: 13px;">Dev Mohamed Alnawjha</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-
-
-
-
-
-
-  <div class="whatsapp-fixed"><a href="https://api.whatsapp.com/send?phone=00966506512697" target="_blank" title="whatsapp"><i class="bi bi-whatsapp"></i></a></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader">
-    <img class="img-fluid" src="../assets/img/features.svg" width="100px" alt="">
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/jQuery/jquery-3.6.0.min.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../assets/js/main.js"></script>
-
-  
-</body>
-
-</html>
+  {% endblock %}

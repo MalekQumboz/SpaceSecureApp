@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> {% block title %} {% endblock %}</title>
+
+
+<!--  frappe css-->
+  <link type="text/css" rel="stylesheet" href="/assets/css/erpnext-web.css?ver=1678112186.0">
+<!--  frappe css-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/space_secure/assets/img/features.svg" rel="icon">
+  <link href="../assets/space_secure/assets/img/features.svg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/earlyaccess/notokufiarabic.css' rel='stylesheet' type='text/css'/>
+  <link href=' https://fonts.googleapis.com/earlyaccess/droidarabickufi.css' rel='stylesheet' type='text/css'/>
+  <!-- /Fonts -->
+
+  <!-- CSS -->
+  <link href="../assets/space_secure/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/space_secure/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/space_secure/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/space_secure/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/space_secure/assets/vendor/Hover-master/css/hover.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/space_secure/assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/space_secure/assets/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link href="../assets/space_secure/assets/css/style.css" rel="stylesheet">
+  <!-- /CSS -->
+
+
+<!--frappe script-->
+  <script>
+		window.frappe = {};
+		frappe.ready_events = [];
+		frappe.ready = function(fn) {
+			frappe.ready_events.push(fn);
+		}
+		window.dev_server = 1;
+		window.socketio_port = 9000;
+		window.show_language_picker = 0;
+	</script>
+<!--frappe script-->
+</head>
+
+<body dir="ltr" class="ltr"  frappe-session-status="logged-in" data-path="update-profile" class="" >
+
+  <!-- header -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent  header-scrolled">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <!-- brand -->
+      <a class="navbar-brand mx-4" href="">
+        <img src="../assets/space_secure/assets/img/logo.svg" alt="" height="80">
+      </a>
+      <!-- /brand -->
+
+      <!-- nav -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index#hero">Home</a></li>
+          <li class="dropdown"><a href="cypersecurity"><span>Cyber Security</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Remote Access</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>DDoS attacks</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Security Information</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Encryption</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Security Consulting</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i> Intrusion Prevention System</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="hostservice"><span>Hosting</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+              <li><a href="hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Private servers </a></li>
+              <li><a href="hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Cloud servers</a></li>
+              <li><a href="hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Windows Hosting</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="webservice"><span>Website & Application</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Website Programming </a></li>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Android Application</a></li>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>IOS Applications</a></li>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Systems Development</a></li>
+            </ul>
+          </li>
+          <li><a class="scrollto" href="package">Packages</a></li>
+          <li><a title="AR" href="/"><span class="badge bg-info link-hover p-2 rounded-circle"><i class="bi bi-translate fs-6"></i></span></a></li>
+          <li><a class="getstarted scrollto" href="/login"><span>Login</span></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- /nav -->
+
+    </div>
+  </header>
+  <!-- /header -->
+
+{% block content %}
+
+{% endblock %}
+
+<!-- ======= Footer ======= -->
+  <footer id="footer" class="pt-4">
+    <div class="footer-top pb-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-10 col-md-6 text-end footer-newsletter" style="z-index: 50;">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/space_secure/assets/img/logo_white.svg" alt="" height="100">
+            </a>
+            <p style="text-align: justify;" class="mt-2 lh-lg">
+Secure Space Corporation is one of the most important organizations in the Kingdom of Saudi Arabia that is dedicated to providing cybersecurity solutions to companies and organizations of all sizes.               </p>
+            <div class="social-links my-4">
+              <a href="https://twitter.com/SpaceSecur" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/people/%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%A2%D9%85%D9%86/100089902982803/?mibextid=ZbWKwL" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.tiktok.com/@spacesecur" class="tiktok"><i class="bi bi-tiktok"></i></a>
+              <a href="https://www.instagram.com/spacesecur/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/spacesecure/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-10 col-lg footer-links">
+            <h4>Cyber Security</h4>
+            <ul>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Remote Access</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>DDoS attacks</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Security Information </a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Encryption</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Security Consulting</a></li>
+              <li><a href="cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Intrusion Prevention System</a></li>
+
+            </ul>
+          </div>
+          <div class="col-md-6 col-10 col-lg footer-links">
+            <h4>Hosting services</h4>
+            <ul>
+              <li><a href="hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Private servers </a></li>
+              <li><a href="hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Cloud servers</a></li>
+              <li><a href="hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Windows Hosting</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-10 col-lg footer-links">
+            <h4>Website & Application design</h4>
+            <ul>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Website Programming </a></li>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Android Application</a></li>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>IOS Applications</a></li>
+              <li><a href="webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i> Systems Development </a></li>
+            </ul>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-success bottom-footer m-0 p-0 py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center" style="z-index: 50;">
+            <div class="text-white fs-6">
+              All rights reserved <a class="fw-bold namesite" href="#">Space Secure</a> &copy; 2023
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <div class="whatsapp-fixed"><a href="https://api.whatsapp.com/send?phone=00966506512697" target="_blank" title="whatsapp"><i class="bi bi-whatsapp"></i></a></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader">
+    <img class="img-fluid" src="../assets/space_secure/assets/img/features.svg" width="100px" alt="">
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/space_secure/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/space_secure/assets/vendor/aos/aos.js"></script>
+  <script src="../assets/space_secure/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/space_secure/assets/vendor/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="../assets/space_secure/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/space_secure/assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/space_secure/assets/js/main.js"></script>
+
+
+  {% block base_scripts %}
+
+<!-- js should be loaded in body! -->
+<!--<script type="text/javascript" src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>-->
+<script type="text/javascript" src="/assets/js/frappe-web.min.js"></script>
+<script type="text/javascript" src="/assets/js/control.min.js"></script>
+<script type="text/javascript" src="/assets/js/dialog.min.js"></script>
+<!--<script type="text/javascript" src="/assets/js/bootstrap-4-web.min.js"></script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    {% endblock %}
+
+    {%- for link in web_include_js %}
+    <script type="text/javascript" src="{{ link | abs_url }}"></script>
+    {%- endfor -%}
+
+    {%- block script %}
+    {%- endblock %}
+    <!-- csrf_token -->
+    {%- block body_include %}{{ body_include or "" }}{% endblock -%}
+</body>
+
+</html>

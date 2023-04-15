@@ -24,12 +24,12 @@ ID,Language,Source Text,Translated Text
 ,ar,Multi Language,تعداد اللغات
 ,ar,Multiple pages,أقسام وصفحات غير محدودة
 ,ar,Live chat,محادثة مباشرة
-,ar,Adding  in Google ,اضافة الموقع في جوجل
+,ar,Adding  in Google,اضافة الموقع في جوجل
 ,ar,Photo and video gallery,معرض صور وفيديو
 ,ar,Adding social media pages,اضافة مواقع التواصل الاجتماعي
 ,ar,Service Request Forms,نموذج طلب خدمة
 ,ar,Product and shopping cart,منتجات مع سلة المشتريات
-,ar,Website stats ,احصائيات للموقع
+,ar,Website stats,احصائيات للموقع
 ,ar,Platform upgrade,التحديث والترقيه للمنصة
 ,ar,Training  on Dashboard,تدريب على لوحة التحكم
 ,ar,Technical support,الدعم الفني
@@ -60,5 +60,31 @@ ID,Language,Source Text,Translated Text
 ,ar,Total price,السعر الاجمالي
 ,ar,Communication Requests,طلبات التواصل
 ,ar,Srevice Name,اسم الخدمة
-,,Company website,الموقع الالكتروني للشركة
-,,Main Service,الخدمة الرئيسية
+,ar,Company website,الموقع الالكتروني للشركة
+,ar,Main Service,الخدمة الرئيسية
+,ar,Collection of Subscription,التحصيل من الاشتراكات
+,ar,Communication Request,طلبات التواصل
+,ar,Main Services List,قائمة الخدمات الرئيسية
+,ar,New Main Service,اضافة خدمة رئيسية
+,ar,Main Service Report,تقارير الخدمة الرئيسية
+,ar,Sub Services,الخدمات الفرعية
+,ar,Sub Services List,قائمة الخدمات الفرعية
+,ar,New Sub Service,اضافة خدمة فرعية
+,ar,Sub Service Report,تقارير الخدمة الفرعية
+,ar,Subscription List,قائمة الاشتراكات
+,ar,New Subscription,اشتراك جديد
+,ar,Subscription Report,تقارير الاشتراكات
+,ar,Number of client,عدد العملاء
+,ar,Clients,العملاء
+,ar,Client List,قائمة العملاء
+,ar,New Client,اضافة عميل 
+,ar,Client Report,تقارير العملاء
+,ar,Communication Request,طلبات التواصل
+,ar,Communication Requests List,قائمة طلبات التواصل
+,ar,Communication Requests Report,تقارير طلبات التواصل
+,ar,Packages,الباقات
+,ar,Package List,قائمة الباقات
+,ar,New Package,اضافة باقة 
+,ar,Package Report,تقارير الباقات
+,ar,Complaint topic,عنوان الشكوى
+,ar,Technical support topic,الدعم الفني

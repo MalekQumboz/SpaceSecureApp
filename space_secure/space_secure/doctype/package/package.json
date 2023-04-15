@@ -10,6 +10,7 @@
   "basic_information",
   "_section",
   "package_name",
+  "package_name_en",
   "main_service",
   "active",
   "column_break_do2uw",
@@ -50,7 +51,7 @@
   "number_of_databases",
   "ssl_certificate",
   "ssh_access",
-  "24_hours_technical_support",
+  "hours_technical_support",
   "section_break_8q5sv",
   "cyber_security_service",
   "service_features"
@@ -60,7 +61,7 @@
    "fieldname": "package_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Package Name",
+   "label": "Package Name (Ar)",
    "reqd": 1
   },
   {
@@ -99,7 +100,7 @@
    "label": "Package Details"
   },
   {
-   "depends_on": "eval:doc.main_service== '\u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0648\u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a'",
+   "depends_on": "eval:doc.main_service== '\u062e\u062f\u0645\u0629 \u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0648\u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a'",
    "fieldname": "section_break_gflay",
    "fieldtype": "Section Break"
   },
@@ -204,7 +205,7 @@
    "label": "Protection and security"
   },
   {
-   "depends_on": "eval:doc.main_service== '\u0627\u0644\u0627\u0633\u062a\u0636\u0627\u0641\u0629'",
+   "depends_on": "eval:doc.main_service== '\u062e\u062f\u0645\u0629 \u0627\u0644\u0627\u0633\u062a\u0636\u0627\u0641\u0629'",
    "fieldname": "section_break_hjln9",
    "fieldtype": "Section Break"
   },
@@ -215,10 +216,10 @@
   },
   {
    "fieldname": "main_service",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Main Services",
-   "options": "Main Service",
+   "options": "\u062e\u062f\u0645\u0629 \u0627\u0644\u0627\u0633\u062a\u0636\u0627\u0641\u0629\n\u062e\u062f\u0645\u0629 \u0627\u0644\u0627\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a\n\u062e\u062f\u0645\u0629 \u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0648\u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a",
    "reqd": 1
   },
   {
@@ -286,12 +287,6 @@
    "label": "ssh access"
   },
   {
-   "default": "0",
-   "fieldname": "24_hours_technical_support",
-   "fieldtype": "Check",
-   "label": "24 hours technical support"
-  },
-  {
    "fieldname": "column_break_cnbgg",
    "fieldtype": "Column Break"
   },
@@ -301,7 +296,7 @@
    "label": " "
   },
   {
-   "depends_on": "eval:doc.main_service== '\u0627\u0644\u0627\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a'",
+   "depends_on": "eval:doc.main_service== '\u062e\u062f\u0645\u0629 \u0627\u0644\u0627\u0645\u0646 \u0627\u0644\u0633\u064a\u0628\u0631\u0627\u0646\u064a'",
    "fieldname": "section_break_8q5sv",
    "fieldtype": "Section Break"
   },
@@ -315,11 +310,23 @@
    "fieldtype": "Table",
    "label": "Service features",
    "options": "Service Features"
+  },
+  {
+   "default": "0",
+   "fieldname": "hours_technical_support",
+   "fieldtype": "Check",
+   "label": "24 hours technical support"
+  },
+  {
+   "fieldname": "package_name_en",
+   "fieldtype": "Data",
+   "label": "Package Name (En)",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-27 16:11:57.641977",
+ "modified": "2023-04-10 17:14:00.639554",
  "modified_by": "Administrator",
  "module": "Space Secure",
  "name": "Package",

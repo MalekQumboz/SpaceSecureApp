@@ -1,6 +1,11 @@
 {
  "category": "Modules",
- "charts": [],
+ "charts": [
+  {
+   "chart_name": "Subscription",
+   "label": "Collection of Subscription"
+  }
+ ],
  "creation": "2023-03-26 22:55:04.146613",
  "developer_mode_only": 0,
  "disable_user_customization": 1,
@@ -14,7 +19,7 @@
  "is_standard": 1,
  "label": "Subscriptions",
  "links": [],
- "modified": "2023-03-26 23:08:59.712276",
+ "modified": "2023-04-15 11:57:27.250333",
  "modified_by": "Administrator",
  "module": "Space Secure",
  "name": "Subscriptions",
