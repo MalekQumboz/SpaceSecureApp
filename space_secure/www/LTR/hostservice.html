@@ -55,50 +55,25 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">Private Servers</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  Private servers are the perfect solution for slowing down your site, powerful technologies that we provide to your site with great features and non-stop technical support.
-                </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2">View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+
+          {% for host_service in host_sub %}
           <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
             <div class="card box-serv">
               <div class="card-header px-4 d-block text-center border-0 bg-transparent">
                 <span class="box-icon-se" ><i class="bi bi-cloud-arrow-up fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">Cloud servers</h5>
+                <h5 class="card-title fw-bold fs-5 text-white mt-2">{{host_service["service_name"]}}</h5>
                 <a href="" class="btn"></a>
               </div>
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  Get access to one of the most flexible and efficient on-premises cloud infrastructures at home and abroad.
+                  {{host_service["service_description"]}}
                 </p>
                 <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2">View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-database-check fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">Windows Hosting</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
- Windows servers give you the security and stability of your site full control, and special resources. Features are similar to your own server.                  </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2">View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
+
         </div>
 
       </div>

@@ -55,91 +55,25 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-arrows-angle-contract fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2"> Remote Access </h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  We provide remote monitoring and management through our unified information security center to ensure that security incidents are resolved quickly and efficiently.
-                  <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-virus2 fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2"> DDoS attacks</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  We have high experience in monitoring and protecting against denial-of-service or denial-of-service attacks, which are attacks that are carried out by flooding sites with a torrent of unnecessary data.                 </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages<i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-eye-slash fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">Encryption</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  Encryption is the conversion of data into a form called ciphertext, so that it is not easily understood by unauthorized people, so that it becomes difficult for eavesdroppers or hackers to read it.                 </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-        
+
+         {% for cypersecurity in cypersecurity_sub %}
           <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
             <div class="card box-serv">
               <div class="card-header px-4 d-block text-center border-0 bg-transparent">
                 <span class="box-icon-se" ><i class="bi bi-shield-shaded fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">  Intrusion Prevention</h5>
+                <h5 class="card-title fw-bold fs-5 text-white mt-2"> {{cypersecurity["service_name"]}}</h5>
                 <a href="" class="btn"></a>
               </div>
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  There are many ways to classify intrusion detection systems based on the type and location of sensors and the methodologies used on this engine to generate alerts in many simple intrusion detection systems.                 </p>
+                     {{cypersecurity["service_description"]}}
+                </p>
                 <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-person-fill-lock fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2"> Security Information and Event Management</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  Information Security Management and Event Management (SIEM) products and services combine Security Information Management (SIM) and Security Event Management (SEM). It provides real-time analysis of security alerts generated by applications and network devices.                 </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-bricks fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2"> Security Consulting</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  Work with the organization to assess its current security situation and identify areas for improvement. This can include conducting risk assessments, developing security policies and procedures, and providing training to employees.                 </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2"> View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+           {% endfor %}
+
         </div>
 
       </div>

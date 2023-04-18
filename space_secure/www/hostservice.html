@@ -54,48 +54,25 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">سيرفرات خاصة</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  السيرفرات الخاصة الحل الامثل لبطئ موقعك ,تقنيات جبارة نوفرها للموقع الخاص بكم بمزايا رائعة ودعم فني لا يتوقف.                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+
+           {% for host_service in host_sub %}
           <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
             <div class="card box-serv">
               <div class="card-header px-4 d-block text-center border-0 bg-transparent">
                 <span class="box-icon-se" ><i class="bi bi-cloud-arrow-up fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">سيرفرات سحابية</h5>
+                <h5 class="card-title fw-bold fs-5 text-white mt-2">{{host_service["arabic_service_name"]}}</h5>
                 <a href="" class="btn"></a>
               </div>
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  احصل على إمكانية الوصول إلى واحدة من البنى التحتية السحابية المحلية الأكثر مرونة وفعالية في داخل المملكة وخارجها.                </p>
+                    {{host_service["arabic_service_description"]}}
+                  </p>
                 <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-database-check fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">استضافة ويندوز</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  سيرفرات ويندوز تمنحك الامان والاستقرار لموقعك تحكم كامل، وموارد خاصة. مميزات تماثل سيرفرك الخاص.                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
+
         </div>
 
       </div>

@@ -236,7 +236,7 @@
   },
   {
    "fieldname": "ram",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "RAM"
   },
   {
@@ -246,32 +246,32 @@
   },
   {
    "fieldname": "traffic",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Traffic"
   },
   {
    "fieldname": "processor",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Processor"
   },
   {
    "fieldname": "number_of_files",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Number of files"
   },
   {
    "fieldname": "number_of_connections_at_the_moment",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Number of connections at the moment"
   },
   {
    "fieldname": "number_of__emails",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Number of  emails"
   },
   {
    "fieldname": "number_of_databases",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Number of databases"
   },
   {
@@ -326,7 +326,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-10 17:14:00.639554",
+ "modified": "2023-04-18 14:12:27.669547",
  "modified_by": "Administrator",
  "module": "Space Secure",
  "name": "Package",

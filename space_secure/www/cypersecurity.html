@@ -53,91 +53,25 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-arrows-angle-contract fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">الوصول عن بعد</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  نوفر مراقبة وإدارة عن بعد من خلال مركزنا الموحد لأمن المعلومات لضمان حل الحوادث الأمنية بسرعة وكفاءة عالية.                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-virus2 fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">هجمات حجب الخدمة</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  نمتلك خبرة عالية في الرصد والحماية من هجمات الحرمان من الخدمات أو هجوم حجب الخدمة، وهي هجمات تتم عن طريق إغراق المواقع بسيل من البيانات غير اللازمة
-                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-bricks fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">استشارات أمنية</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  العمل مع منظمة لتقييم وضعها الأمني الحالي وتحديد مجالات التحسين. يمكن أن يشمل ذلك إجراء تقييمات للمخاطر ، وتطوير السياسات والإجراءات الأمنية ، وتوفير التدريب للموظفين.                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+
+              {% for cypersecurity in cypersecurity_sub %}
           <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
             <div class="card box-serv">
               <div class="card-header px-4 d-block text-center border-0 bg-transparent">
                 <span class="box-icon-se" ><i class="bi bi-shield-shaded fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">نظام منع الاختراق</h5>
+                <h5 class="card-title fw-bold fs-5 text-white mt-2">{{cypersecurity["arabic_service_name"]}}</h5>
                 <a href="" class="btn"></a>
               </div>
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  هنالك العديد من الطرق لتصنيف أنظمة كشف التسلل بالاعتماد على نوع وموقع أجهزة الاستشعار والمنهجيات المستخدمة على هذا المحرك للقيام بتوليد التنبيهات في العديد من أنظمة الكشف عن التسلل البسيط.                </p>
+                    {{cypersecurity["arabic_service_description"]}}
+                  </p>
                 <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-person-fill-lock fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">المعلومات الأمنية وإدارة الأحداث</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  تجمع منتجات وخدمات إدارة أمن المعلومات وإدارة الأحداث (SIEM) بين إدارة معلومات الأمن (SIM) وإدارة الأحداث الأمنية (SEM). وتقوم بتوفير التحليل في الوقت الحقيقي للتنبيهات الأمنية التي تم إنشاؤها بواسطة التطبيقات وأجهزة الشبكة.                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-eye-slash fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">التشفير</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  التشفير هو تحويل البيانات إلى نموذج يدعى النص المشفر، بحيث لا يسهل فهمها من قبل أشخاص غير مصرح لهم,  بحيث يصبح من الصعب على المتصنتين أو القراصنة قراءتها.                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
+
         </div>
 
       </div>

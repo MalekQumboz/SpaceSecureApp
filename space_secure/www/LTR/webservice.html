@@ -55,53 +55,23 @@
         </div>
         <div class="row justify-content-center">
 
+            {% for webservice_service in webservice_sub %}
             <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
             <div class="card box-serv">
               <div class="card-header px-4 d-block text-center border-0 bg-transparent">
                 <span class="box-icon-se" ><i class="bi bi-filetype-html fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">Website Programming</h5>
+                <h5 class="card-title fw-bold fs-5 text-white mt-2">{{webservice_service["service_name"]}}</h5>
                 <a href="" class="btn"></a>
               </div>
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                    Web design is the beginning that ensures the continued success of your business
+                 {{webservice_service["service_description"]}}
                 </p>
                 <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2">View Packages <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-apple fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">Mobile Application Programming</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  The era of mobile app programming has now begun, with app commerce taking up the lion's share of e-commerce.
-                   <br> Are you still hesitant now to start a new app project?
-                </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2">View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-windows fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">Systems Development</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  Our team strives to understand your need and take your business to the best using the latest technology.                 </p>
-                <a href="../LTR/package" class="btn hvr-sweep-to-top btn-info mt-2">View Packages <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
 
       </div>

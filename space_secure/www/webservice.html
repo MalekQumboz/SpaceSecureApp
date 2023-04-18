@@ -59,51 +59,27 @@
         </div>
         <div class="row justify-content-center">
 
+           {% for webservice_service in webservice_sub %}
           <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
             <div class="card box-serv">
               <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-filetype-html fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">برمجة مواقع الويب</h5>
+                <span class="box-icon-se" >
+                  <i class="bi bi-filetype-html fs-1"></i>
+                </span>
+                <h5 class="card-title fw-bold fs-5 text-white mt-2">{{webservice_service["arabic_service_name"]}}</h5>
                 <a href="" class="btn"></a>
               </div>
               <div class="card-body box-serv-hide pt-0 ">
                 <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  تصميم مواقع الإنترنت البداية التي تضمن النجاح المتواصل لأعمالك                </p>
+                     {{webservice_service["arabic_service_description"]}}
+                  </p>
                 <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-apple fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">برمجة تطبيقات الموبايل</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  عصر برمجة تطبيقات الجوال قد بدأ الآن حيث تحتل التجارة عبر التطبيقات نصيب الأسد في التجارة الالكترونية.
-                  <br> فهل لازلت متردد الان في البدء بمشروع تطبيق جديد؟                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
 
-          <div class="col-10 col-md-4 col-lg-3 mt-4 mx-2 text-center" data-aos="fade-up">
-            <div class="card box-serv">
-              <div class="card-header px-4 d-block text-center border-0 bg-transparent">
-                <span class="box-icon-se" ><i class="bi bi-windows fs-1"></i></span>
-                <h5 class="card-title fw-bold fs-5 text-white mt-2">تطوير الانظمة</h5>
-                <a href="" class="btn"></a>
-              </div>
-              <div class="card-body box-serv-hide pt-0 ">
-                <p class="card-text text-white lh-lg fs-6" style="text-align: justify;">
-                  يسعى فريقنا لفهم حاجتك ونقل أعمالك إلى الأفضل باستخدام أحدث التقنيات.                </p>
-                <a href="/package" class="btn hvr-sweep-to-top btn-info mt-2">عرض الباقات <i class="bi bi-arrow-down"></i></a>
-              </div>
-            </div>
-          </div>
         </div>
 
       </div>

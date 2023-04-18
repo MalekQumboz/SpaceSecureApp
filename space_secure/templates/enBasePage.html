@@ -72,28 +72,24 @@
           <li><a class="nav-link scrollto active" href="index#hero">Home</a></li>
           <li class="dropdown"><a href="../LTR/cypersecurity"><span>Cyber Security</span><i class="bi bi-plus fs-5 me-1"></i></a>
             <ul>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Remote Access</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>DDoS attacks</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Security Information</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Encryption</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Security Consulting</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i> Intrusion Prevention System</a></li>
-
+               {% for cypersecurity in cypersecurity_sub %}
+              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["service_name"]}}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li class="dropdown"><a href="../LTR/hostservice"><span>Hosting</span><i class="bi bi-plus fs-5 me-1"></i></a>
             <ul>
-              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Private servers </a></li>
-              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Cloud servers</a></li>
-              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Windows Hosting</a></li>
+              {% for host in host_sub %}
+              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host["service_name"]}}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li class="dropdown"><a href="../LTR/webservice"><span>Website & Application</span><i class="bi bi-plus fs-5 me-1"></i></a>
             <ul>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Website Programming </a></li>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Android Application</a></li>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>IOS Applications</a></li>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>Systems Development</a></li>
+               {% for webservice in webservice_sub %}
+                  <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice["service_name"]}}</a></li>
+                {% endfor %}
+
             </ul>
           </li>
           <li><a class="scrollto" href="../LTR/package">Packages</a></li>
@@ -134,30 +130,26 @@ Secure Space Corporation is one of the most important organizations in the Kingd
           <div class="col-md-6 col-10 col-lg footer-links">
             <h4>Cyber Security</h4>
             <ul>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Remote Access</a></li>
-              <li><a href=../LTR/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>DDoS attacks</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Security Information </a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Encryption</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Security Consulting</a></li>
-              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Intrusion Prevention System</a></li>
+              {% for cypersecurity in cypersecurity_sub %}
+              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["service_name"]}}</a></li>
+              {% endfor %}
 
             </ul>
           </div>
           <div class="col-md-6 col-10 col-lg footer-links">
             <h4>Hosting services</h4>
             <ul>
-              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Private servers </a></li>
-              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Cloud servers</a></li>
-              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Windows Hosting</a></li>
+              {% for host in host_sub %}
+              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host["service_name"]}}</a></li>
+              {% endfor %}
             </ul>
           </div>
           <div class="col-md-6 col-10 col-lg footer-links">
             <h4>Website & Application design</h4>
             <ul>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Website Programming </a></li>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>Android Application</a></li>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>IOS Applications</a></li>
-              <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i> Systems Development </a></li>
+              {% for webservice in webservice_sub %}
+                  <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice["service_name"]}}</a></li>
+                {% endfor %}
             </ul>
           </div>
 

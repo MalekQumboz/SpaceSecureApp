@@ -72,28 +72,23 @@
           <li><a class="nav-link scrollto active" href="/#hero">الرئيسية</a></li>
           <li class="dropdown"><a href="/cypersecurity"><span>خدمة الأمن السيبراني</span><i class="bi bi-plus fs-5 me-1"></i></a>
             <ul>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>الوصول عن بعد</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>هجمات حجب الخدمة</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>نظام منع الاختراق</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>المعلومات الأمنية وإدارة الأحداث</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>التشفير</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>  استشارات أمنية</a></li>
-
+              {% for cypersecurity in cypersecurity_sub %}
+              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["arabic_service_name"]}}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li class="dropdown"><a href="/hostservice"><span>خدمات تقنية</span><i class="bi bi-plus fs-5 me-1"></i></a>
             <ul>
-              <li><a href="/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>سرفرات خاصة </a></li>
-              <li><a href="/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>سرفرات سحابية</a></li>
-              <li><a href="/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>استضافة ويندوز</a></li>
+              {% for host_service in host_sub %}
+              <li><a href="/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host_service["arabic_service_name"]}}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li class="dropdown"><a href="/webservice"><span>تصميم المواقع والتطبيقات</span><i class="bi bi-plus fs-5 me-1"></i></a>
             <ul>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة مواقع الويب </a></li>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات أندرويد </a></li>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>برمجة تطبيقات ايفون</a></li>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i> تطوير الانظمة</a></li>
+              {% for webservice_service in webservice_sub %}
+              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice_service["arabic_service_name"]}} </a></li>
+             {% endfor %}
             </ul>
           </li>
           <li><a class="scrollto" href="/package">البـاقـات</a></li>
@@ -133,29 +128,25 @@
           <div class="col-md-6 col-10 col-lg footer-links">
             <h4><span> الأمن السيبراني</span></h4>
             <ul>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>الوصول عن بعد</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>هجمات حجب الخدمة</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>نظام منع الاختراق</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>المعلومات الأمنية وإدارة الأحداث</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>التشفير</a></li>
-              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>استشارات أمنية</a></li>
+              {% for cypersecurity in cypersecurity_sub %}
+              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["arabic_service_name"]}}</a></li>
+              {% endfor %}
             </ul>
           </div>
           <div class="col-md-6 col-10 col-lg footer-links">
             <h4><span>الخدمات التقنية</span></h4>
             <ul>
-              <li><a href="/hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>سرفرات خاصة </a></li>
-              <li><a href="/hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>سرفرات سحابية</a></li>
-              <li><a href="/hostservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>استضافة ويندوز</a></li>
+               {% for host_service in host_sub %}
+              <li><a href="/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host_service["arabic_service_name"]}}</a></li>
+              {% endfor %}
             </ul>
           </div>
           <div class="col-md-6 col-10 col-lg footer-links">
             <h4><span>تصميم المواقع والتطبيقات</span></h4>
             <ul>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة مواقع الويب </a></li>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات أندرويد </a></li>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>برمجة تطبيقات أيفون</a></li>
-              <li><a href="/webservice"><i class="bi bi-check-circle fs-6 text-success ms-2"></i>  تطوير الانظمة</a></li>
+               {% for webservice_service in webservice_sub %}
+              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice_service["arabic_service_name"]}} </a></li>
+             {% endfor %}
             </ul>
           </div>
 
