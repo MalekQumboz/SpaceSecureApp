@@ -17,6 +17,8 @@ def get_context(context):
         data = frappe.get_doc("Main Service", val["name"])
         service_list.append(data)
 
+    frappe.db.commit()
+
     context.mainservices = service_list
     context.packages = package_list
 

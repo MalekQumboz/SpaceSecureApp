@@ -42,6 +42,9 @@ def get_context(context):
 		data=frappe.get_doc("Sub Service", val["name"])
 		webservice_list_nav.append(data)
 
+
+	frappe.db.commit()
+
 	context.cypersecurity_package = cypersecurity_list
 	context.host_package = host_list
 	context.webservice_package = webservice_list

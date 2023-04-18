@@ -20,4 +20,6 @@ def get_context(context):
     context.mainservices = service_list
     context.packages = package_list
 
+    frappe.db.commit()
+
     return context
