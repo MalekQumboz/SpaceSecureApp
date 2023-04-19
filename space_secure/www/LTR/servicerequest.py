@@ -1,25 +1,19 @@
 import frappe
-
-
 def get_context(context):
-    package = frappe.db.get_all("Package", {"active": 1})
-    service = frappe.db.get_all("Main Service")
+    package = frappe.db.sql(""" SELECT * FROM `tabPackage`where active = 1 """,as_dict=1)
+    service = frappe.db.sql(""" SELECT * FROM `tabMain Service` """,as_dict=1)
 
-    package_list = []
-    service_list = []
-
-
-    for val in package:
-        data = frappe.get_doc("Package", val["name"])
-        package_list.append(data)
-
-    for val in service:
-        data = frappe.get_doc("Main Service", val["name"])
-        service_list.append(data)
-
-    context.mainservices = service_list
-    context.packages = package_list
+    cypersecurity_nav = frappe.db.sql(""" SELECT * FROM `tabSub Service`where active = 1  and main_services_name = 'خدمة الامن السيبراني' """,as_dict=1)
+    host_nav = frappe.db.sql(""" SELECT * FROM `tabSub Service`where active = 1  and main_services_name = 'خدمة الاستضافة' """, as_dict=1)
+    webservice_nav = frappe.db.sql(""" SELECT * FROM `tabSub Service`where active = 1  and main_services_name = 'خدمة تصميم المواقع والتطبيقات' """, as_dict=1)
 
     frappe.db.commit()
+
+    context.mainservices = service
+    context.packages = package
+
+    context.cypersecurity_sub = cypersecurity_nav
+    context.host_sub = host_nav
+    context.webservice_sub = webservice_nav
 
     return context

@@ -2,6 +2,45 @@
 
 {% block title %} الأمن السيبراني {% endblock %}
 
+
+{% block navbar %}
+
+  <!-- nav -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/#hero">الرئيسية</a></li>
+          <li class="dropdown"><a href="/cypersecurity"><span>خدمة الأمن السيبراني</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+              {% for cypersecurity in cypersecurity_sub %}
+              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["arabic_service_name"]}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/hostservice"><span>خدمات تقنية</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+              {% for host_service in host_sub %}
+              <li><a href="/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host_service["arabic_service_name"]}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/webservice"><span>تصميم المواقع والتطبيقات</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+              {% for webservice_service in webservice_sub %}
+              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice_service["arabic_service_name"]}} </a></li>
+             {% endfor %}
+            </ul>
+          </li>
+          <li><a class="scrollto" href="/package">البـاقـات</a></li>
+          <li><a title="EN" href="LTR/"><span class="badge bg-info link-hover p-2 rounded-circle"><i class="bi bi-translate fs-6"></i></span></a></li>
+          <li><a class="getstarted scrollto" href="/login"><span>تسجيل الدخول</span></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- /nav -->
+
+{% endblock %}
+
+
 {% block content %}
 
   <main id="main" class="page">
@@ -234,4 +273,32 @@
     <!-- /Portfolio Section -->
   </main><!-- End #main -->
 
+{% endblock %}
+
+
+{% block footer %}
+   <div class="col-md-6 col-10 col-lg footer-links">
+            <h4><span> الأمن السيبراني</span></h4>
+            <ul>
+              {% for cypersecurity in cypersecurity_sub %}
+              <li><a href="/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["arabic_service_name"]}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-md-6 col-10 col-lg footer-links">
+            <h4><span>الخدمات التقنية</span></h4>
+            <ul>
+               {% for host_service in host_sub %}
+              <li><a href="/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host_service["arabic_service_name"]}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-md-6 col-10 col-lg footer-links">
+            <h4><span>تصميم المواقع والتطبيقات</span></h4>
+            <ul>
+               {% for webservice_service in webservice_sub %}
+              <li><a href="/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice_service["arabic_service_name"]}} </a></li>
+             {% endfor %}
+            </ul>
+          </div>
 {% endblock %}

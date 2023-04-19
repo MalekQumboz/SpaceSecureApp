@@ -2,6 +2,43 @@
 
 {% block title %} Host Service {% endblock %}
 
+{% block navbar %}
+ <!-- nav -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index#hero">Home</a></li>
+          <li class="dropdown"><a href="../LTR/cypersecurity"><span>Cyber Security</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+               {% for cypersecurity in cypersecurity_sub %}
+              <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["service_name"]}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../LTR/hostservice"><span>Hosting</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+              {% for host in host_sub %}
+              <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host["service_name"]}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          <li class="dropdown"><a href="../LTR/webservice"><span>Website & Application</span><i class="bi bi-plus fs-5 me-1"></i></a>
+            <ul>
+               {% for webservice in webservice_sub %}
+                  <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice["service_name"]}}</a></li>
+                {% endfor %}
+
+            </ul>
+          </li>
+          <li><a class="scrollto" href="../LTR/package">Packages</a></li>
+          <li><a title="AR" href="/"><span class="badge bg-info link-hover p-2 rounded-circle"><i class="bi bi-translate fs-6"></i></span></a></li>
+          <li><a class="getstarted scrollto" href="/login"><span>Login</span></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- /nav -->
+{% endblock %}
+
+
 {% block content %}
 
   <main id="main" class="page">
@@ -244,5 +281,35 @@
     </section>
     <!-- /Portfolio Section -->
   </main><!-- End #main -->
+
+{% endblock %}
+
+
+ {% block footer %}
+<div class="col-md-6 col-10 col-lg footer-links">
+    <h4>Cyber Security</h4>
+    <ul>
+      {% for cypersecurity in cypersecurity_sub %}
+      <li><a href="../LTR/cypersecurity"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{cypersecurity["service_name"]}}</a></li>
+      {% endfor %}
+
+    </ul>
+  </div>
+  <div class="col-md-6 col-10 col-lg footer-links">
+    <h4>Hosting services</h4>
+    <ul>
+      {% for host in host_sub %}
+      <li><a href="../LTR/hostservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{host["service_name"]}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-md-6 col-10 col-lg footer-links">
+    <h4>Website & Application design</h4>
+    <ul>
+      {% for webservice in webservice_sub %}
+          <li><a href="../LTR/webservice"><i class="bi bi-check-circle fs-3 text-info mx-2"></i>{{webservice["service_name"]}}</a></li>
+        {% endfor %}
+    </ul>
+  </div>
 
 {% endblock %}
