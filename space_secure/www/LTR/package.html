@@ -80,7 +80,7 @@
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> Web & Application Services Packages</h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> Web Services Packages</h3>
 
               </div>
             </div>
@@ -95,6 +95,7 @@
               <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
               <h3>{{webservice["package_name_en"]}}</h3>
               <h4><sup>SAR</sup>{{webservice["price"]}}</h4>
+              <h5><sup>Monthly</sup></h5>
               <ul>
 
                 <li><i class="bi bi-check"></i>Professional Design:
@@ -242,6 +243,9 @@
                 {% endif %}
                 Protection
                 </li>
+                 {% for features in webservice.website_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
+                {% endfor %}
               </ul>
               <a href="../LTR/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>
             </div>
@@ -253,6 +257,44 @@
       </div>
     </section>
     <!-- / section1 -->
+
+      <!--  section1 -->
+ <section class="pricing">
+  <div class="container">
+    <div class="row pb-2 justify-content-center">
+      <div class="col-12 text-center">
+        <div class="card border-0">
+          <div class="card-body text-center p-1">
+            <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> Application Services Packages</h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row  owl-carousel owl-theme justify-content-center gy-4 mt-2">
+
+      {% for app in app_package %}
+      <div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item text-center">
+          <span class="box-icon-se" ><i class="bi bi-apple fs-1"></i></span>
+          <h3>{{app["package_name_en"]}}</h3>
+          <h4><sup>SAR</sup>{{app["price"]}}</h4>
+          <h5><sup>Monthly</sup></h5>
+          <ul>
+             {% for features in app.applications_service_features %}
+            <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
+            {% endfor %}
+          </ul>
+          <a href="../LTR/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+<!-- / section1 -->
 
     <!--  section2 -->
     <section class="pricing">
@@ -275,6 +317,7 @@
               <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
               <h3>{{host["package_name_en"]}}</h3>
               <h4><sup>SAR</sup>{{host["price"]}}</h4>
+              <h5><sup>Monthly</sup></h5>
               <ul>
                 <li><i class="bi bi-check"></i>	RAM: {{host["ram"]}}</li>
                 <li><i class="bi bi-check"></i>	Hard disk: {{host["hard_drive"]}}</li>
@@ -302,6 +345,10 @@
                 {% endif %}
                 SSH access
                 </li>
+
+                 {% for features in host.hosting_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
+                {% endfor %}
 
                 <li>
                 {% if host["hours_technical_support"] ==1 %}

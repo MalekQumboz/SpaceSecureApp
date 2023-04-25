@@ -237,6 +237,7 @@
               <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
            <h3>{{webservice_package.package_name_en}}</h3>
               <h4><sup>SAR</sup>{{webservice_package.price}}</h4>
+              <h5><sup>Monthly</sup></h5>
               <ul>
 
                    <li><i class="bi bi-check"></i>
@@ -387,6 +388,11 @@
                 {% endif %}
                 Protection
                 </li>
+
+                {% for features in webservice_package.website_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
+                {% endfor %}
+
               </ul>
               <a href="../LTR/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>            </div>
           </div>
@@ -397,157 +403,15 @@
           {% for webservice_package_2  in  webservice_package_sec %}
           <div class="col-10 col-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-item text-center">
-              <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
+              <span class="box-icon-se" ><i class="bi bi-apple fs-1"></i></span>
               <h3>{{webservice_package_2.package_name_en}}</h3>
               <h4><sup>SAR</sup>{{webservice_package_2.price}}</h4>
+              <h5><sup>Monthly</sup></h5>
               <ul>
-                <li><i class="bi bi-check"></i>
-                     Professional Design:
-                     <br>
-                  {% if webservice_package_2.professional_design =="اختيار قالب" %}
-                    Chose template
-                  {% elif webservice_package_2.professional_design =="تصميم خاص"  %}
-                    Special Design
-                  {% elif webservice_package_2.professional_design =="غير محدود"  %}
-                  Unlimited
-                  {% endif %}
-                  </li>
 
-                <li><i class="bi bi-check"></i> Language:
-
-                  {% if webservice_package_2.multi_language =="عربي فقط" %}
-                    Arabic only
-                  {% elif webservice_package_2.multi_language =="عربي انجليزي"  %}
-                    Arabic English
-                  {% elif webservice_package_2.multi_language =="اكثر من لغة"  %}
-                  <br> Multi Language
-                  {% endif %}
-                  </li>
-                <li>
-                {% if webservice_package_2.logo_design ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Logo Design
-                </li>
-
-                <li>
-                {% if webservice_package_2.compatibility_with_browser ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                 Browser compatibility
-                </li>
-
-                <li>
-                {% if webservice_package_2.multiple_pages ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Unlimited pages
-                </li>
-
-                <li>
-                {% if webservice_package_2.live_chat ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Live chat
-                </li>
-
-                <li>
-                {% if webservice_package_2.adding__in_google ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                 Add website in Google
-                </li>
-
-                <li>
-                {% if webservice_package_2.photo_and_video_gallery ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Photo & Video Gallery
-                </li>
-
-                <li>
-                {% if webservice_package_2.adding_social_media_pages ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                 Add Social Media
-                </li>
-
-                <li>
-                {% if webservice_package_2.service_request_forms ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Service Request Form
-                </li>
-
-                <li>
-                {% if webservice_package_2.product_and_shopping_cart ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Products with cart
-                </li>
-
-                <li>
-                {% if webservice_package_2.website_stats ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Website Stats
-                </li>
-
-                <li>
-                {% if webservice_package_2.platform_upgrade ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                upgrade of the platform
-                </li>
-
-                <li>
-                {% if webservice_package_2.training__on_dashboard ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Control panel training
-                </li>
-
-                <li>
-                {% if webservice_package_2.technical_support ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Technical Support
-                </li>
-
-                <li>
-                {% if webservice_package_2.protection_and_security ==1 %}
-                  <i class="bi bi-check"></i>
-                {% else %}
-                  <i class="bi bi-x"></i>
-                {% endif %}
-                Protection
-                </li>
+                 {% for features in webservice_package_2.applications_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
+                {% endfor %}
               </ul>
               <a href="../LTR/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">Order Now <i class="bi bi-arrow-down"></i></a>            </div>
           </div>
@@ -559,6 +423,7 @@
               <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
               <h3>{{host_package.package_name_en}}</h3>
               <h4><sup>SAR</sup>{{host_package.price}}</h4>
+              <h5><sup>Monthly</sup></h5>
               <ul>
                 <li><i class="bi bi-check"></i>	RAM: {{host_package.ram}}</li>
                 <li><i class="bi bi-check"></i>	Hard disk: {{host_package.hard_drive}}</li>
@@ -586,6 +451,10 @@
                 {% endif %}
                 SSH access
                 </li>
+
+                {% for features in host_package.hosting_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
+                {% endfor %}
 
                 <li>
                 {% if host_package.hours_technical_support ==1 %}

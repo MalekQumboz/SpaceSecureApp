@@ -106,23 +106,28 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"space_secure.tasks.all"
-#	],
-#	"daily": [
-#		"space_secure.tasks.daily"
-#	],
-#	"hourly": [
-#		"space_secure.tasks.hourly"
-#	],
-#	"weekly": [
-#		"space_secure.tasks.weekly"
-#	]
-#	"monthly": [
-#		"space_secure.tasks.monthly"
-#	]
-# }
+scheduler_events = {
+	"cron":{
+		"* * * * *":[
+			"space_secure.tasks.cron"
+		]
+	},
+	"all": [
+		"space_secure.tasks.all"
+	],
+	"daily": [
+		"space_secure.tasks.daily"
+	],
+	"hourly": [
+		"space_secure.tasks.hourly"
+	],
+	"weekly": [
+		"space_secure.tasks.weekly"
+	],
+	"monthly": [
+		"space_secure.tasks.monthly"
+	]
+}
 
 # Testing
 # -------

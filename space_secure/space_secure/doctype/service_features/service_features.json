@@ -6,21 +6,27 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "service_features_name"
+  "service_features_name",
+  "service_features_name_arabic"
  ],
  "fields": [
   {
    "fieldname": "service_features_name",
-   "fieldtype": "Small Text",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Service Features Name",
+   "label": "Service Features Name (EN)",
    "translatable": 1
+  },
+  {
+   "fieldname": "service_features_name_arabic",
+   "fieldtype": "Data",
+   "label": "Service Features Name (AR)"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-03-23 02:09:03.817149",
+ "modified": "2023-04-23 20:26:31.313787",
  "modified_by": "Administrator",
  "module": "Space Secure",
  "name": "Service Features",

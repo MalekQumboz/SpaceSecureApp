@@ -79,7 +79,7 @@
           <div class="col-12 text-center">
             <div class="card border-0">
               <div class="card-body text-center p-1">
-                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> باقات خدمات تصميم المواقع والتطبيقات</h3>
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> باقات خدمات تصميم وبرمجة المواقع</h3>
 
               </div>
             </div>
@@ -94,6 +94,8 @@
               <span class="box-icon-se" ><i class="bi bi-bag-check-fill fs-1"></i></span>
               <h3>{{webservice["package_name"]}}</h3>
               <h4><sup>SAR</sup>{{webservice["price"]}}</h4>
+              <h5><sup>شهرياً</sup></h5>
+
               <ul>
                 <li><i class="bi bi-check"></i>تصميم احترافي: {{webservice["professional_design"]}}</li>
                 <li><i class="bi bi-check"></i>تعدد اللغات: {{webservice["multi_language"]}}</li>
@@ -223,6 +225,51 @@
                 {% endif %}
                 الحماية
                 </li>
+                {% for features in webservice.website_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name_arabic}}</li>
+                {% endfor %}
+
+              </ul>
+              <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </section>
+    <!-- / section1 -->
+
+     <!--  section1 -->
+    <section class="pricing">
+      <div class="container">
+        <div class="row pb-2 justify-content-center">
+          <div class="col-12 text-center">
+            <div class="card border-0">
+              <div class="card-body text-center p-1">
+                <h3 class="card-title fs-4 mb-3 text-primary fw-bold" data-aos="fade-up"><i class="bi bi-file-earmark-code fs-2 text-success"></i> باقات خدمات تصميم وبرمجة التطبيقات</h3>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row  owl-carousel owl-theme justify-content-center gy-4 mt-2">
+
+          {% for app in app_package %}
+
+          <div class="col-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item text-center">
+              <span class="box-icon-se" ><i class="bi bi-apple fs-1"></i></span>
+              <h3>{{app["package_name"]}}</h3>
+              <h4><sup>SAR</sup>{{app["price"]}}</h4>
+              <h5><sup>شهرياً</sup></h5>
+
+              <ul>
+                {% for features in app.applications_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name_arabic}}</li>
+                {% endfor %}
+
               </ul>
               <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>
             </div>
@@ -256,6 +303,7 @@
               <span class="box-icon-se" ><i class="bi bi-hdd-network fs-1"></i></span>
               <h3>{{host["package_name"]}}</h3>
               <h4><sup>SAR</sup>{{host["price"]}}</h4>
+              <h5><sup>شهرياً</sup></h5>
               <ul>
                 <li><i class="bi bi-check"></i>	الرام العشوائي: {{host["ram"]}}</li>
                 <li><i class="bi bi-check"></i>	الهارد ديسك: {{host["hard_drive"]}}</li>
@@ -283,6 +331,10 @@
                 {% endif %}
                 SSH access
                 </li>
+
+               {% for features in host.hosting_service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name_arabic}}</li>
+                {% endfor %}
 
                 <li>
                 {% if host["hours_technical_support"] ==1 %}
@@ -325,8 +377,8 @@
               <span class="box-icon-se" ><i class="bi bi-shield-check fs-1"></i></span>
               <h3>{{cypersecurity["package_name"]}}</h3>
               <ul>
-                {% for features in cypersecurity["service_features"] %}
-                <li><i class="bi bi-check"></i>{{features.service_features_name}}</li>
+                {% for features in cypersecurity.service_features %}
+                <li><i class="bi bi-check"></i>{{features.service_features_name_arabic}}</li>
                 {% endfor %}
               </ul>
               <a href="/servicerequest" class="btn  hvr-sweep-to-top btn-outline-success ms-4 me-4">طلب الآن <i class="bi bi-arrow-down"></i></a>

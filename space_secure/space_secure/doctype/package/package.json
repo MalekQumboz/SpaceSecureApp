@@ -12,6 +12,7 @@
   "package_name",
   "package_name_en",
   "main_service",
+  "type",
   "active",
   "column_break_do2uw",
   "sub_service",
@@ -37,6 +38,10 @@
   "training__on_dashboard",
   "technical_support",
   "protection_and_security",
+  "section_break_eoxvu",
+  "website_service_features",
+  "section_break_l49gf",
+  "applications_service_features",
   "section_break_hjln9",
   "web_hosting_services",
   "ram",
@@ -52,6 +57,8 @@
   "ssl_certificate",
   "ssh_access",
   "hours_technical_support",
+  "column_break_eixuw",
+  "hosting_service_features",
   "section_break_8q5sv",
   "cyber_security_service",
   "service_features"
@@ -100,7 +107,7 @@
    "label": "Package Details"
   },
   {
-   "depends_on": "eval:doc.main_service== '\u062e\u062f\u0645\u0629 \u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0648\u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a'",
+   "depends_on": "eval:doc.type== '\u0645\u0648\u0627\u0642\u0639'",
    "fieldname": "section_break_gflay",
    "fieldtype": "Section Break"
   },
@@ -232,7 +239,7 @@
   {
    "fieldname": "websites_and_applications_design",
    "fieldtype": "Heading",
-   "label": "websites and applications design"
+   "label": "websites design"
   },
   {
    "fieldname": "ram",
@@ -322,11 +329,51 @@
    "fieldtype": "Data",
    "label": "Package Name (En)",
    "reqd": 1
+  },
+  {
+   "fieldname": "hosting_service_features",
+   "fieldtype": "Table",
+   "label": "Hosting Service features",
+   "options": "Service Features"
+  },
+  {
+   "depends_on": "eval:doc.main_service== '\u062e\u062f\u0645\u0629 \u0627\u0644\u0627\u0633\u062a\u0636\u0627\u0641\u0629'",
+   "fieldname": "column_break_eixuw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "website_service_features",
+   "fieldtype": "Table",
+   "label": "Website Service features",
+   "options": "Service Features"
+  },
+  {
+   "depends_on": "eval:doc.type== '\u0645\u0648\u0627\u0642\u0639'",
+   "fieldname": "section_break_eoxvu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.main_service== '\u062e\u062f\u0645\u0629 \u062a\u0635\u0645\u064a\u0645 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0648\u0627\u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a'",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type ",
+   "options": "\u0627\u062e\u062a\u0631 \u0627\u0644\u0646\u0648\u0639\n\u0645\u0648\u0627\u0642\u0639\n\u062a\u0637\u0628\u064a\u0642\u0627\u062a"
+  },
+  {
+   "depends_on": "eval:doc.type== '\u062a\u0637\u0628\u064a\u0642\u0627\u062a'",
+   "fieldname": "section_break_l49gf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "applications_service_features",
+   "fieldtype": "Table",
+   "label": "Applications Service features",
+   "options": "Service Features"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-04-18 14:12:27.669547",
+ "modified": "2023-04-23 19:08:31.335431",
  "modified_by": "Administrator",
  "module": "Space Secure",
  "name": "Package",
